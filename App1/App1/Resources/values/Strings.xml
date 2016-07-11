@@ -5,7 +5,7 @@
   <string name="sample_show_log">Show Log</string>
   <string name="sample_hide_log">Hide Log</string>
   
-  <string name="from_rd">RadiansDegrees</string>
+  <string name="from_rd">Radians/Degrees</string>
   <string-array name="from_array">
     <item>Radians</item>
     <item>Degrees</item>

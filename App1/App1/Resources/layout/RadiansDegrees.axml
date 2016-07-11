@@ -8,84 +8,82 @@
     android:padding="70px"
     android:clickable="true"
     android:focusableInTouchMode="true">
-    <LinearLayout
+  <LinearLayout
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+    <TextView
+        android:text="Value: "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textView3"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000" />
+    <EditText
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/valueTxt"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:text="Value: "
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:id="@+id/textView3"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:textColor="#000" />
-        <EditText
-            android:text=""
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:id="@+id/valueTxt"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#000"
-            android:singleLine="true" />
-    </LinearLayout>
-    <LinearLayout
+        android:textColor="#000"
+        android:singleLine="true" />
+  </LinearLayout>
+  <LinearLayout
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+    <TextView
+        android:text="From:"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:textColor="#000" />
+    <Spinner
+        android:id="@+id/fromSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+  </LinearLayout>
+  <LinearLayout
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+    <TextView
+        android:text="To:"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textColor="#000" />
+    <Spinner
+        android:id="@+id/toSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+  </LinearLayout>
+  <LinearLayout
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+    <Button
+        android:id="@+id/MyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:background="@drawable/btn_transparent"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:textColor="@drawable/btn_text_color"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp" />
+    <TextView
+        android:text="OUTPUT"
+        android:textAppearance="?android:attr/textAppearanceSmall"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:text="From:"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView1"
-            android:textColor="#000" />
-        <Spinner
-            android:id="@+id/fromSpinner"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:prompt="@string/from_rd" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:text="To:"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView2"
-            android:textColor="#000" />
-        <Spinner
-            android:id="@+id/toSpinner"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:prompt="@string/from_rd" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <Button
-            android:id="@+id/MyButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Convert"
-            android:background="@drawable/btn_transparent"
-            android:padding="10dp"
-            android:layout_gravity="center"
-            android:textColor="@drawable/btn_text_color"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp" />
-        <TextView
-            android:text="OUTPUT"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/resultTxt"
-            android:textColor="#000"
-            android:layout_gravity="center"
-            android:paddingLeft="30dp"
-            android:singleLine="true" />
-    </LinearLayout>
+        android:id="@+id/resultTxt"
+        android:textColor="#000"
+        android:layout_gravity="center"
+        android:paddingLeft="30dp"
+        android:singleLine="true" />
+  </LinearLayout>
 </LinearLayout>

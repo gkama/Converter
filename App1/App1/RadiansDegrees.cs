@@ -32,10 +32,6 @@ namespace Converter
             Spinner fromSpinner = FindViewById<Spinner>(Resource.Id.fromSpinner);
             Spinner toSpinner = FindViewById<Spinner>(Resource.Id.toSpinner);
 
-            string fromSpinnerID = fromSpinner.Id.ToString();
-            string toSpinnerID = toSpinner.Id.ToString();
-
-
             fromSpinner.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinner_ItemSelected);
             toSpinner.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinner_ItemSelected);
             var adapter = ArrayAdapter.CreateFromResource(

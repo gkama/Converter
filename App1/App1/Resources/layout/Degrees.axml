@@ -37,7 +37,7 @@
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:id="@+id/textView1"
+            android:id="@+id/textView4"
             android:textColor="#000" />
         <Spinner
             android:id="@+id/fromSpinnerDeg"
@@ -54,7 +54,7 @@
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:id="@+id/textView2"
+            android:id="@+id/textView5"
             android:textColor="#000" />
         <Spinner
             android:id="@+id/toSpinnerDeg"

@@ -29,21 +29,17 @@ namespace Converter
 
 
             //Spinners
-            Spinner fromSpinner = FindViewById<Spinner>(Resource.Id.fromSpinnerDeg);
-            Spinner toSpinner = FindViewById<Spinner>(Resource.Id.toSpinnerDeg);
+            Spinner fromSpinnerDeg = FindViewById<Spinner>(Resource.Id.fromSpinnerDeg);
+            Spinner toSpinnerDeg = FindViewById<Spinner>(Resource.Id.toSpinnerDeg);
 
-            string fromSpinnerID = fromSpinner.Id.ToString();
-            string toSpinnerID = toSpinner.Id.ToString();
-
-
-            fromSpinner.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinner_ItemSelected);
-            toSpinner.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinner_ItemSelected);
+            fromSpinnerDeg.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinner_ItemSelected);
+            toSpinnerDeg.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinner_ItemSelected);
             var adapter = ArrayAdapter.CreateFromResource(
-                    this, Resource.Array.from_array, Android.Resource.Layout.SimpleSpinnerItem);
+                    this, Resource.Array.from_arrayd, Android.Resource.Layout.SimpleSpinnerItem);
 
             adapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
-            fromSpinner.Adapter = adapter;
-            toSpinner.Adapter = adapter;
+            fromSpinnerDeg.Adapter = adapter;
+            toSpinnerDeg.Adapter = adapter;
             //End Spinners
 
             //Calculation
@@ -58,13 +54,13 @@ namespace Converter
                     Toast.MakeText(this, "Invalid Input! Try Again", ToastLength.Long).Show();
                 else
                 {
-                    if (fromSpinner.SelectedItem.ToString() == "Radians" && toSpinner.SelectedItem.ToString() == "Degrees")
+                    if (fromSpinnerDeg.SelectedItem.ToString() == "Radians" && toSpinnerDeg.SelectedItem.ToString() == "Degrees")
                         resultDeg.Text = (Convert.ToDouble(valueDeg.Text.ToString()) * (180 / PI)).ToString("#.000");
-                    else if (fromSpinner.SelectedItem.ToString() == "Degrees" && toSpinner.SelectedItem.ToString() == "Radians")
+                    else if (fromSpinnerDeg.SelectedItem.ToString() == "Degrees" && toSpinnerDeg.SelectedItem.ToString() == "Radians")
                         resultDeg.Text = (Convert.ToDouble(valueDeg.Text.ToString()) * (PI / 180)).ToString("#.000");
-                    else if (fromSpinner.SelectedItem.ToString() == "Radians" && toSpinner.SelectedItem.ToString() == "Radians")
+                    else if (fromSpinnerDeg.SelectedItem.ToString() == "Radians" && toSpinnerDeg.SelectedItem.ToString() == "Radians")
                         resultDeg.Text = Convert.ToDouble(valueDeg.Text.ToString()).ToString("#.000");
-                    else if (fromSpinner.SelectedItem.ToString() == "Degrees" && toSpinner.SelectedItem.ToString() == "Degrees")
+                    else if (fromSpinnerDeg.SelectedItem.ToString() == "Degrees" && toSpinnerDeg.SelectedItem.ToString() == "Degrees")
                         resultDeg.Text = Convert.ToDouble(valueDeg.Text.ToString()).ToString("#.000");
                 }
             };
