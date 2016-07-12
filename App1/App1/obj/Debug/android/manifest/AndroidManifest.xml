@@ -5,8 +5,6 @@
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <application android:label="Converter" android:icon="@drawable/icon" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
-    <activity android:icon="@drawable/icon" android:label="Converter" android:theme="@android:style/Theme.Holo.Light" android:name="md58230e2671c1459b4e80426a9f1b57685.Degrees" />
-    <activity android:icon="@drawable/icon" android:label="Converter" android:theme="@android:style/Theme.Holo.Light" android:name="md58230e2671c1459b4e80426a9f1b57685.RadiansDegrees" />
     <activity android:icon="@drawable/icon" android:label="Converter" android:theme="@android:style/Theme.Holo.Light" android:name="md58230e2671c1459b4e80426a9f1b57685.MainLayoutActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />

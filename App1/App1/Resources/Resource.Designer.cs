@@ -37,6 +37,9 @@ namespace Converter
 			// aapt resource value: 0x7f050001
 			public const int from_arrayd = 2131034113;
 			
+			// aapt resource value: 0x7f050002
+			public const int length_array = 2131034114;
+			
 			static Array()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -64,16 +67,22 @@ namespace Converter
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int btn_text_color = 2130837504;
+			public const int back = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int btn_transparent = 2130837505;
+			public const int btn_text_color = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int ic_transform_black_24dp = 2130837506;
+			public const int btn_transparent = 2130837506;
 			
 			// aapt resource value: 0x7f020003
-			public const int Icon = 2130837507;
+			public const int ic_transform_black_24dp = 2130837507;
+			
+			// aapt resource value: 0x7f020004
+			public const int Icon = 2130837508;
+			
+			// aapt resource value: 0x7f020005
+			public const int subdirectory = 2130837509;
 			
 			static Drawable()
 			{
@@ -88,35 +97,44 @@ namespace Converter
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f06000f
-			public const int MyButton = 2131099663;
+			// aapt resource value: 0x7f060017
+			public const int MyButton = 2131099671;
 			
 			// aapt resource value: 0x7f060006
 			public const int MyButtonDeg = 2131099654;
 			
-			// aapt resource value: 0x7f060008
-			public const int fragmentContainer = 2131099656;
+			// aapt resource value: 0x7f06000e
+			public const int MyButtonLength = 2131099662;
 			
-			// aapt resource value: 0x7f06000c
-			public const int fromSpinner = 2131099660;
+			// aapt resource value: 0x7f060010
+			public const int fragmentContainer = 2131099664;
+			
+			// aapt resource value: 0x7f060014
+			public const int fromSpinner = 2131099668;
 			
 			// aapt resource value: 0x7f060003
 			public const int fromSpinnerDeg = 2131099651;
 			
+			// aapt resource value: 0x7f06000b
+			public const int fromSpinnerLength = 2131099659;
+			
 			// aapt resource value: 0x7f060007
 			public const int resultDeg = 2131099655;
 			
-			// aapt resource value: 0x7f060010
-			public const int resultTxt = 2131099664;
+			// aapt resource value: 0x7f06000f
+			public const int resultLength = 2131099663;
 			
-			// aapt resource value: 0x7f06000b
-			public const int textView1 = 2131099659;
+			// aapt resource value: 0x7f060018
+			public const int resultTxt = 2131099672;
 			
-			// aapt resource value: 0x7f06000d
-			public const int textView2 = 2131099661;
+			// aapt resource value: 0x7f060013
+			public const int textView1 = 2131099667;
 			
-			// aapt resource value: 0x7f060009
-			public const int textView3 = 2131099657;
+			// aapt resource value: 0x7f060015
+			public const int textView2 = 2131099669;
+			
+			// aapt resource value: 0x7f060011
+			public const int textView3 = 2131099665;
 			
 			// aapt resource value: 0x7f060002
 			public const int textView4 = 2131099650;
@@ -127,17 +145,32 @@ namespace Converter
 			// aapt resource value: 0x7f060000
 			public const int textView9 = 2131099648;
 			
-			// aapt resource value: 0x7f06000e
-			public const int toSpinner = 2131099662;
+			// aapt resource value: 0x7f060008
+			public const int textViewLength1 = 2131099656;
+			
+			// aapt resource value: 0x7f06000a
+			public const int textViewLength2 = 2131099658;
+			
+			// aapt resource value: 0x7f06000c
+			public const int textViewLength3 = 2131099660;
+			
+			// aapt resource value: 0x7f060016
+			public const int toSpinner = 2131099670;
 			
 			// aapt resource value: 0x7f060005
 			public const int toSpinnerDeg = 2131099653;
 			
+			// aapt resource value: 0x7f06000d
+			public const int toSpinnerLength = 2131099661;
+			
 			// aapt resource value: 0x7f060001
 			public const int valueDeg = 2131099649;
 			
-			// aapt resource value: 0x7f06000a
-			public const int valueTxt = 2131099658;
+			// aapt resource value: 0x7f060009
+			public const int valueLength = 2131099657;
+			
+			// aapt resource value: 0x7f060012
+			public const int valueTxt = 2131099666;
 			
 			static Id()
 			{
@@ -156,10 +189,13 @@ namespace Converter
 			public const int Degrees = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int MainLayout = 2130903041;
+			public const int Length = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int RadiansDegrees = 2130903042;
+			public const int MainLayout = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int RadiansDegrees = 2130903043;
 			
 			static Layout()
 			{
@@ -181,10 +217,13 @@ namespace Converter
 			public const int Hello = 2130968576;
 			
 			// aapt resource value: 0x7f040005
-			public const int from_d = 2130968581;
+			public const int degreesStr = 2130968581;
+			
+			// aapt resource value: 0x7f040006
+			public const int lengthStr = 2130968582;
 			
 			// aapt resource value: 0x7f040004
-			public const int from_rd = 2130968580;
+			public const int rdStr = 2130968580;
 			
 			// aapt resource value: 0x7f040003
 			public const int sample_hide_log = 2130968579;

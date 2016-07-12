@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#e6e6e6"
-    android:padding="70px"
+    android:paddingLeft="70px"
+    android:paddingRight="70px"
+    android:paddingBottom="70px"
     android:clickable="true"
     android:focusableInTouchMode="true">
     <LinearLayout
@@ -42,8 +44,7 @@
         <Spinner
             android:id="@+id/fromSpinnerDeg"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:prompt="@string/from_d" />
+            android:layout_height="wrap_content" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="fill_parent"
@@ -59,8 +60,7 @@
         <Spinner
             android:id="@+id/toSpinnerDeg"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:prompt="@string/from_d" />
+            android:layout_height="wrap_content" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="fill_parent"
@@ -70,7 +70,7 @@
             android:id="@+id/MyButtonDeg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Convert"
+            android:drawableRight="@drawable/subdirectory"
             android:background="@drawable/btn_transparent"
             android:padding="10dp"
             android:layout_gravity="center"
@@ -78,14 +78,20 @@
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp" />
         <TextView
-            android:text="OUTPUT"
-            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="..."
+            android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/resultDeg"
             android:textColor="#000"
             android:layout_gravity="center"
+            android:gravity="center"
             android:paddingLeft="30dp"
-            android:singleLine="true" />
+            android:paddingRight="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/back"
+            android:layout_marginLeft="30dp"
+            android:textIsSelectable="true" />
     </LinearLayout>
 </LinearLayout>

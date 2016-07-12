@@ -4,17 +4,28 @@
   <string name="ApplicationName">Converter</string>
   <string name="sample_show_log">Show Log</string>
   <string name="sample_hide_log">Hide Log</string>
-  
-  <string name="from_rd">Radians/Degrees</string>
+
+  <string name="rdStr">Radians/Degrees</string>
   <string-array name="from_array">
     <item>Radians</item>
     <item>Degrees</item>
   </string-array>
 
-  <string name="from_d">Degrees</string>
+  <string name="degreesStr">Degrees</string>
   <string-array name="from_arrayd">
     <item>Celcius</item>
-    <item>Fahrenheit</item>
+    <item>Fahrenheit"</item>
     <item>Kelvin</item>
+  </string-array>
+
+  <string name="lengthStr">Length</string>
+  <string-array name="length_array">
+    <item>Centimeters</item>
+    <item>Meters</item>
+    <item>Feet</item>
+    <item>Yards</item>
+    <item>Kilometers</item>
+    <item>Miles</item>
+    <item>Inches</item>
   </string-array>
 </resources>
