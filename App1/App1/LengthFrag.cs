@@ -8,6 +8,7 @@ using Android.Widget;
 using Android.OS;
 using Android.Graphics;
 using Android.Views.InputMethods;
+using System.Text.RegularExpressions;
 
 
 namespace Converter
@@ -84,6 +85,7 @@ namespace Converter
             Typeface centuryGothicFont = Typeface.CreateFromAsset(Application.Context.Assets, "fonts/century_gothic_font.TTF");
             
             Button buttonLength = view.FindViewById<Button>(Resource.Id.MyButtonLength);
+            Button lengthFormulasButton = view.FindViewById<Button>(Resource.Id.lengthFormulasButton);
 
             EditText valueLength = view.FindViewById<EditText>(Resource.Id.valueLength);
             TextView resultLength = view.FindViewById<TextView>(Resource.Id.resultLength);
@@ -134,6 +136,13 @@ namespace Converter
                     resultLength.Text = (convertLength(Convert.ToDouble(valueLength.Text.ToString().Trim()), conversionStr)).ToString("#.00000");
                 }
             };
+
+            //
+            lengthFormulasButton.Click += delegate
+            {
+                ShowDialog();
+            };
+
             return view;
         }
 
@@ -143,10 +152,19 @@ namespace Converter
             Spinner spinner = (Spinner)sender;
         }
 
+        //Show dialog
+        public void ShowDialog()
+        {
+            var transaction = FragmentManager.BeginTransaction();
+            var dialogFragment = new LengthFormulasFragment();
+            dialogFragment.Show(transaction, "length_formulas_fragment");
+        }
+
         //Check if string is a number
         bool IsNumber(string s)
         {
-            return s.Length > 0 && s.All(c => Char.IsDigit(c));
+            double d;
+            return double.TryParse(s, out d);
         }
 
         //Conversion function

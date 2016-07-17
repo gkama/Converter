@@ -100,7 +100,8 @@ namespace Converter
         //Check if string is a number
         bool IsNumber(string s)
         {
-            return s.Length > 0 && s.All(c => Char.IsDigit(c));
+            double d;
+            return double.TryParse(s, out d);
         }
     }
 }

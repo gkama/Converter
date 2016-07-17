@@ -4,6 +4,20 @@
   <string name="ApplicationName">Converter</string>
   <string name="sample_show_log">Show Log</string>
   <string name="sample_hide_log">Hide Log</string>
+  <string name="fromto">
+    <u>
+      <b>
+        <i>From | To:</i>
+      </b>
+    </u>
+  </string>
+  <string name="multiplyby">
+    <u>
+      <b>
+        <i>Multiply By:</i>
+      </b>
+    </u>
+  </string>
 
   <string name="rdStr">Radians/Degrees</string>
   <string-array name="from_array">

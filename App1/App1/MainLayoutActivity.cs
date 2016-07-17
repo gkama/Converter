@@ -25,6 +25,7 @@ namespace Converter
 
             SetContentView(Resource.Layout.MainLayout);
 
+
             AddTab("length", new LengthFrag());
             AddTab("degrees", new DegreesFrag());
             AddTab("radians & degrees", new RadiansDegreesFrag());
