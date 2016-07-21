@@ -14,9 +14,14 @@ using Android.Graphics.Drawables;
 
 namespace Converter
 {
-    [Activity(Label = "Converter", MainLauncher = true, Icon = "@drawable/icon", Theme = "@android:style/Theme.Holo.Light")]
+    [Activity(Label = "Converter", Icon = "@drawable/icon", Theme = "@android:style/Theme.Holo.Light")]
     class MainLayoutActivity : Activity
     {
+        private int LENGTHTAB_POS = 0;
+        private int WEIGHTTAB_POS = 1;
+        private int DEGREESTAB_POS = 2;
+        private int RADIANSDEGREESTAB_POS = 3;
+
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -24,7 +29,6 @@ namespace Converter
             this.ActionBar.NavigationMode = ActionBarNavigationMode.Tabs;
 
             SetContentView(Resource.Layout.MainLayout);
-
 
             AddTab("length", new LengthFrag());
             AddTab("weight", new WeightFrag());
@@ -37,8 +41,17 @@ namespace Converter
             LengthFrag.currentLengthMainActivityContext = this.ApplicationContext;
             WeightFrag.currentWeightMainActivityContext = this.ApplicationContext;
 
-            if (bundle != null)
-                this.ActionBar.SelectTab(this.ActionBar.GetTabAt(bundle.GetInt("tab")));
+            //See where it came from and set the selected tab
+            string cameFrom = Intent.GetStringExtra("CameFrom");
+
+            if (cameFrom == "Length")
+                ActionBar.SetSelectedNavigationItem(LENGTHTAB_POS);
+            else if (cameFrom == "Weight")
+                ActionBar.SetSelectedNavigationItem(WEIGHTTAB_POS);
+            else if (cameFrom == "Degrees")
+                ActionBar.SetSelectedNavigationItem(DEGREESTAB_POS);
+            else
+                ActionBar.SetSelectedNavigationItem(RADIANSDEGREESTAB_POS);
         }
 
         protected override void OnSaveInstanceState(Bundle outState)

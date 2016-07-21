@@ -8,6 +8,11 @@ D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\android\bin\Converter.Convert
 D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\layout\mainlayout.xml
 D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\layout\degrees.xml
 D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\layout\length.xml
+D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\layout\lengthformulas.xml
+D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\layout\degreesformulas.xml
+D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\layout\radiansdegreesformulas.xml
+D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\layout\weight.xml
+D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\layout\weightformulas.xml
 D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\layout\radiansdegrees.xml
 D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\values\strings.xml
 D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\drawable\btn_transparent.xml
@@ -20,6 +25,7 @@ D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\drawable-xxxhdpi\ic_trans
 D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\drawable\back.xml
 D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\drawable\subdirectory.png
 D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\drawable\icon.png
+D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\drawable\arrow_forward.png
 D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\R.cs.flag
 D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\uploadflags.txt
 D:\Visual Studio 2015\Projects\App1\App1\bin\Debug\Converter.dll.mdb
@@ -47,11 +53,9 @@ D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\android\assets\System.Service
 D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\android\assets\System.Xml.dll.mdb
 D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
 D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\Converter.csprojResolveAssemblyReference.cache
-D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\drawable\arrow_forward.png
-D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\layout\lengthformulas.xml
-D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\layout\degreesformulas.xml
-D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\layout\radiansdegreesformulas.xml
-D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\layout\weight.xml
-D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\layout\weightformulas.xml
+D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\layout\main.xml
+D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\drawable\trending_arrow.png
+D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\anim\in_from_right.xml
+D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\anim\out_to_left.xml
 D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\Converter.dll.mdb
 D:\Visual Studio 2015\Projects\App1\App1\bin\Debug\Converter.dll.mdb

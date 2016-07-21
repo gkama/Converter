@@ -2,6 +2,10 @@ Converter.DegreesFormulasFragment, Converter;md58230e2671c1459b4e80426a9f1b57685
 Converter.DegreesFormulasFragment, Converter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md58230e2671c1459b4e80426a9f1b57685.DegreesFormulasFragment
 Converter.DegreesFormulasFragment;md58230e2671c1459b4e80426a9f1b57685.DegreesFormulasFragment
 converter.DegreesFormulasFragment;md58230e2671c1459b4e80426a9f1b57685.DegreesFormulasFragment
+Converter.Main, Converter;md58230e2671c1459b4e80426a9f1b57685.Main
+Converter.Main, Converter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md58230e2671c1459b4e80426a9f1b57685.Main
+Converter.Main;md58230e2671c1459b4e80426a9f1b57685.Main
+converter.Main;md58230e2671c1459b4e80426a9f1b57685.Main
 Converter.WeightFormulasFragment, Converter;md58230e2671c1459b4e80426a9f1b57685.WeightFormulasFragment
 Converter.WeightFormulasFragment, Converter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md58230e2671c1459b4e80426a9f1b57685.WeightFormulasFragment
 Converter.WeightFormulasFragment;md58230e2671c1459b4e80426a9f1b57685.WeightFormulasFragment
