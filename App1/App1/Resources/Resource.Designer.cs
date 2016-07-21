@@ -127,6 +127,9 @@ namespace Converter
 			// aapt resource value: 0x7f060021
 			public const int dialogRadiansDegreesDismissBtn = 2131099681;
 			
+			// aapt resource value: 0x7f06002c
+			public const int dialogWeightDismissBtn = 2131099692;
+			
 			// aapt resource value: 0x7f060016
 			public const int fragmentContainer = 2131099670;
 			
@@ -180,6 +183,9 @@ namespace Converter
 			
 			// aapt resource value: 0x7f060020
 			public const int tableRadiansDegreesFormulas = 2131099680;
+			
+			// aapt resource value: 0x7f06002b
+			public const int tableWeightFormulas = 2131099691;
 			
 			// aapt resource value: 0x7f06001c
 			public const int toSpinner = 2131099676;
@@ -268,6 +274,9 @@ namespace Converter
 			
 			// aapt resource value: 0x7f030007
 			public const int Weight = 2130903047;
+			
+			// aapt resource value: 0x7f030008
+			public const int WeightFormulas = 2130903048;
 			
 			static Layout()
 			{

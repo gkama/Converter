@@ -9,7 +9,7 @@
       android:minHeight="25px"
       android:paddingLeft="20px"
       android:paddingRight="20px"
-      android:paddingBottom="20px">
+      android:paddingBottom="0px">
 
     <TableLayout
         android:id="@+id/tableLengthFormulas"

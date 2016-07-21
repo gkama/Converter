@@ -52,5 +52,6 @@ D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\layout\lengthformulas.xml
 D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\layout\degreesformulas.xml
 D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\layout\radiansdegreesformulas.xml
 D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\layout\weight.xml
+D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\layout\weightformulas.xml
 D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\Converter.dll.mdb
 D:\Visual Studio 2015\Projects\App1\App1\bin\Debug\Converter.dll.mdb

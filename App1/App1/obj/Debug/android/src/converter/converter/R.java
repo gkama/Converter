@@ -34,6 +34,7 @@ public final class R {
         public static final int dialogDegreesDismissBtn=0x7f06000a;
         public static final int dialogDismissBtn=0x7f060015;
         public static final int dialogRadiansDegreesDismissBtn=0x7f060021;
+        public static final int dialogWeightDismissBtn=0x7f06002c;
         public static final int fragmentContainer=0x7f060016;
         public static final int fromSpinner=0x7f06001a;
         public static final int fromSpinnerDeg=0x7f060003;
@@ -52,6 +53,7 @@ public final class R {
         public static final int tableDegreesFormulas=0x7f060009;
         public static final int tableLengthFormulas=0x7f060014;
         public static final int tableRadiansDegreesFormulas=0x7f060020;
+        public static final int tableWeightFormulas=0x7f06002b;
         public static final int toSpinner=0x7f06001c;
         public static final int toSpinnerDeg=0x7f060005;
         public static final int toSpinnerLength=0x7f060010;
@@ -79,6 +81,7 @@ public final class R {
         public static final int radiansdegrees=0x7f030005;
         public static final int radiansdegreesformulas=0x7f030006;
         public static final int weight=0x7f030007;
+        public static final int weightformulas=0x7f030008;
     }
     public static final class string {
         public static final int ApplicationName=0x7f040000;

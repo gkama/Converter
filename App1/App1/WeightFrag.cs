@@ -139,8 +139,8 @@ namespace Converter
         public void ShowDialog()
         {
             var transaction = FragmentManager.BeginTransaction();
-            var dialogFragment = new LengthFormulasFragment();
-            dialogFragment.Show(transaction, "length_formulas_fragment");
+            var dialogFragment = new WeightFormulasFragment();
+            dialogFragment.Show(transaction, "weight_formulas_fragment");
         }
 
         //Check if string is a number

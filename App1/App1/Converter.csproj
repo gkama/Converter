@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DegreesFormulasFragment .cs" />
+    <Compile Include="WeightFormulasFragment.cs" />
     <Compile Include="MySpinnerAdapter.cs" />
     <Compile Include="WeightFrag.cs" />
     <Compile Include="RadiansDegreesFormulasFragment .cs" />
@@ -86,6 +87,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\Weight.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\WeightFormulas.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
