@@ -49,6 +49,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DegreesFormulasFragment .cs" />
+    <Compile Include="MySpinnerAdapter.cs" />
+    <Compile Include="WeightFrag.cs" />
+    <Compile Include="RadiansDegreesFormulasFragment .cs" />
     <Compile Include="LengthFormulasFragment.cs" />
     <Compile Include="LengthFrag.cs" />
     <Compile Include="DegreesFrag.cs" />
@@ -73,6 +77,15 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\LengthFormulas.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\DegreesFormulas.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\RadiansDegreesFormulas.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Weight.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

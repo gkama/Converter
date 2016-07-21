@@ -49,5 +49,8 @@ D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\android\assets\System.Xml.Lin
 D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\Converter.csprojResolveAssemblyReference.cache
 D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\drawable\arrow_forward.png
 D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\layout\lengthformulas.xml
+D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\layout\degreesformulas.xml
+D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\layout\radiansdegreesformulas.xml
+D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\layout\weight.xml
 D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\Converter.dll.mdb
 D:\Visual Studio 2015\Projects\App1\App1\bin\Debug\Converter.dll.mdb

@@ -27,6 +27,7 @@ namespace Converter
 
 
             AddTab("length", new LengthFrag());
+            AddTab("weight", new WeightFrag());
             AddTab("degrees", new DegreesFrag());
             AddTab("radians & degrees", new RadiansDegreesFrag());
 
@@ -34,6 +35,7 @@ namespace Converter
             RadiansDegreesFrag.currentRDFMainActivityContext = this.ApplicationContext;
             DegreesFrag.currentDFMainActivityContext = this.ApplicationContext;
             LengthFrag.currentLengthMainActivityContext = this.ApplicationContext;
+            WeightFrag.currentWeightMainActivityContext = this.ApplicationContext;
 
             if (bundle != null)
                 this.ActionBar.SelectTab(this.ActionBar.GetTabAt(bundle.GetInt("tab")));

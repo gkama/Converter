@@ -89,9 +89,16 @@ namespace Converter
 
             EditText valueLength = view.FindViewById<EditText>(Resource.Id.valueLength);
             TextView resultLength = view.FindViewById<TextView>(Resource.Id.resultLength);
+            TextView valueTextViewLength = view.FindViewById<TextView>(Resource.Id.valueTextViewLength);
+            TextView fromTextViewLength = view.FindViewById<TextView>(Resource.Id.fromTextViewLength);
+            TextView toTextViewLength = view.FindViewById<TextView>(Resource.Id.toTextViewLength);
 
             valueLength.SetTypeface(centuryGothicFont, TypefaceStyle.Italic);
             resultLength.SetTypeface(centuryGothicFont, TypefaceStyle.Italic);
+            lengthFormulasButton.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
+            valueTextViewLength.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
+            fromTextViewLength.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
+            toTextViewLength.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
 
             valueLength.SetRawInputType(Android.Text.InputTypes.ClassNumber | Android.Text.InputTypes.NumberFlagDecimal);
 
@@ -113,8 +120,9 @@ namespace Converter
             fromSpinnerLength.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinner_ItemSelected);
             toSpinnerLength.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinner_ItemSelected);
 
-            var adapter = ArrayAdapter.CreateFromResource(
-                    view.Context, Resource.Array.length_array, Android.Resource.Layout.SimpleSpinnerItem);
+            var lengthArrayPulled = Resources.GetStringArray(Resource.Array.length_array);
+
+            MySpinnerAdapter adapter = new MySpinnerAdapter(view.Context, Android.Resource.Layout.SimpleSpinnerItem, lengthArrayPulled);
 
             adapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
             fromSpinnerLength.Adapter = adapter;

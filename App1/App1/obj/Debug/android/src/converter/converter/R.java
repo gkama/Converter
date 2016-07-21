@@ -9,9 +9,10 @@ package converter.converter;
 
 public final class R {
     public static final class array {
-        public static final int from_array=0x7f050000;
-        public static final int from_arrayd=0x7f050001;
+        public static final int degrees_array=0x7f050001;
         public static final int length_array=0x7f050002;
+        public static final int radiansDegrees_array=0x7f050000;
+        public static final int weight_array=0x7f050003;
     }
     public static final class attr {
     }
@@ -25,50 +26,68 @@ public final class R {
         public static final int subdirectory=0x7f020006;
     }
     public static final class id {
-        public static final int MyButton=0x7f060019;
+        public static final int MyButton=0x7f06001d;
         public static final int MyButtonDeg=0x7f060006;
-        public static final int MyButtonLength=0x7f06000e;
-        public static final int dialogDismissBtn=0x7f060011;
-        public static final int fragmentContainer=0x7f060012;
-        public static final int fromSpinner=0x7f060016;
+        public static final int MyButtonLength=0x7f060011;
+        public static final int MyButtonWeight=0x7f060028;
+        public static final int degreesFormulasButton=0x7f060008;
+        public static final int dialogDegreesDismissBtn=0x7f06000a;
+        public static final int dialogDismissBtn=0x7f060015;
+        public static final int dialogRadiansDegreesDismissBtn=0x7f060021;
+        public static final int fragmentContainer=0x7f060016;
+        public static final int fromSpinner=0x7f06001a;
         public static final int fromSpinnerDeg=0x7f060003;
-        public static final int fromSpinnerLength=0x7f06000b;
-        public static final int lengthFormulasButton=0x7f060010;
+        public static final int fromSpinnerLength=0x7f06000e;
+        public static final int fromSpinnerWeight=0x7f060025;
+        public static final int fromTextViewDegrees=0x7f060002;
+        public static final int fromTextViewLength=0x7f06000d;
+        public static final int fromTextViewRadiansDegrees=0x7f060019;
+        public static final int fromTextViewWeight=0x7f060024;
+        public static final int lengthFormulasButton=0x7f060013;
+        public static final int radiansDegreesFormulasButton=0x7f06001f;
         public static final int resultDeg=0x7f060007;
-        public static final int resultLength=0x7f06000f;
-        public static final int resultTxt=0x7f06001a;
-        public static final int textView1=0x7f060015;
-        public static final int textView2=0x7f060017;
-        public static final int textView3=0x7f060013;
-        public static final int textView4=0x7f060002;
-        public static final int textView5=0x7f060004;
-        public static final int textView9=0x7f060000;
-        public static final int textViewLength1=0x7f060008;
-        public static final int textViewLength2=0x7f06000a;
-        public static final int textViewLength3=0x7f06000c;
-        public static final int toSpinner=0x7f060018;
+        public static final int resultLength=0x7f060012;
+        public static final int resultTxt=0x7f06001e;
+        public static final int resultWeight=0x7f060029;
+        public static final int tableDegreesFormulas=0x7f060009;
+        public static final int tableLengthFormulas=0x7f060014;
+        public static final int tableRadiansDegreesFormulas=0x7f060020;
+        public static final int toSpinner=0x7f06001c;
         public static final int toSpinnerDeg=0x7f060005;
-        public static final int toSpinnerLength=0x7f06000d;
+        public static final int toSpinnerLength=0x7f060010;
+        public static final int toSpinnerWeight=0x7f060027;
+        public static final int toTextViewDegrees=0x7f060004;
+        public static final int toTextViewLength=0x7f06000f;
+        public static final int toTextViewRadiansDegrees=0x7f06001b;
+        public static final int toTextViewWeight=0x7f060026;
         public static final int valueDeg=0x7f060001;
-        public static final int valueLength=0x7f060009;
-        public static final int valueTxt=0x7f060014;
+        public static final int valueLength=0x7f06000c;
+        public static final int valueTextViewDegrees=0x7f060000;
+        public static final int valueTextViewLength=0x7f06000b;
+        public static final int valueTextViewRadiansDegrees=0x7f060017;
+        public static final int valueTextViewWeight=0x7f060022;
+        public static final int valueTxt=0x7f060018;
+        public static final int valueWeight=0x7f060023;
+        public static final int weightFormulasButton=0x7f06002a;
     }
     public static final class layout {
         public static final int degrees=0x7f030000;
-        public static final int length=0x7f030001;
-        public static final int lengthformulas=0x7f030002;
-        public static final int mainlayout=0x7f030003;
-        public static final int radiansdegrees=0x7f030004;
+        public static final int degreesformulas=0x7f030001;
+        public static final int length=0x7f030002;
+        public static final int lengthformulas=0x7f030003;
+        public static final int mainlayout=0x7f030004;
+        public static final int radiansdegrees=0x7f030005;
+        public static final int radiansdegreesformulas=0x7f030006;
+        public static final int weight=0x7f030007;
     }
     public static final class string {
-        public static final int ApplicationName=0x7f040001;
-        public static final int Hello=0x7f040000;
-        public static final int degreesStr=0x7f040007;
-        public static final int fromto=0x7f040004;
-        public static final int lengthStr=0x7f040008;
-        public static final int multiplyby=0x7f040005;
-        public static final int rdStr=0x7f040006;
-        public static final int sample_hide_log=0x7f040003;
-        public static final int sample_show_log=0x7f040002;
+        public static final int ApplicationName=0x7f040000;
+        public static final int degreesStr=0x7f040005;
+        public static final int formula=0x7f040003;
+        public static final int fromto=0x7f040001;
+        public static final int lengthStr=0x7f040006;
+        public static final int multiplyby=0x7f040002;
+        public static final int rdStr=0x7f040004;
+        public static final int weightStr=0x7f040007;
     }
 }

@@ -10,6 +10,7 @@ using Android.Runtime;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
+using Android.Graphics;
 
 namespace Converter
 {
@@ -34,8 +35,31 @@ namespace Converter
 
             var view = inflater.Inflate(Resource.Layout.LengthFormulas, container, false);
 
-            view.FindViewById<Button>(Resource.Id.dialogDismissBtn).Click += (sender, args) => Dismiss();
+            //Custome font - Century Gothic
+            Typeface centuryGothicFont = Typeface.CreateFromAsset(Application.Context.Assets, "fonts/century_gothic_font.TTF");
 
+            TableLayout tableLengthFormulas = view.FindViewById<TableLayout>(Resource.Id.tableLengthFormulas);
+            Button dismissBtn = view.FindViewById<Button>(Resource.Id.dialogDismissBtn);
+
+            //Iterate through every textView in table and set the font
+            for (int k = 0; k < tableLengthFormulas.ChildCount; k++)
+            {
+                View v = tableLengthFormulas.GetChildAt(k);
+                if (v.GetType().Equals(typeof(TableRow)))
+                {
+                    TableRow tr = (TableRow) v;
+                    for(int a = 0; a < tr.ChildCount; a++)
+                    {
+                        TextView tv = (TextView) tr.GetChildAt(a);
+                        tv.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
+                    } 
+                }
+            }
+
+            //Set font
+            dismissBtn.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
+
+            dismissBtn.Click += (sender, args) => Dismiss();
             return view;
         }
 

@@ -30,12 +30,20 @@ namespace Converter
             Typeface centuryGothicFont = Typeface.CreateFromAsset(Application.Context.Assets, "fonts/century_gothic_font.TTF");
             
             Button buttonDeg = view.FindViewById<Button>(Resource.Id.MyButtonDeg);
+            Button degreesFormulasButton = view.FindViewById<Button>(Resource.Id.degreesFormulasButton);
 
             EditText valueDeg = view.FindViewById<EditText>(Resource.Id.valueDeg);
             TextView resultDeg = view.FindViewById<TextView>(Resource.Id.resultDeg);
+            TextView valueTextViewDegrees = view.FindViewById<TextView>(Resource.Id.valueTextViewDegrees);
+            TextView fromTextViewDegreest = view.FindViewById<TextView>(Resource.Id.fromTextViewDegrees);
+            TextView toTextViewDegrees = view.FindViewById<TextView>(Resource.Id.toTextViewDegrees);
 
             valueDeg.SetTypeface(centuryGothicFont, TypefaceStyle.Italic);
             resultDeg.SetTypeface(centuryGothicFont, TypefaceStyle.Italic);
+            degreesFormulasButton.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
+            valueTextViewDegrees.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
+            fromTextViewDegreest.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
+            toTextViewDegrees.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
 
             valueDeg.SetRawInputType(Android.Text.InputTypes.ClassNumber | Android.Text.InputTypes.NumberFlagDecimal);
 
@@ -57,8 +65,9 @@ namespace Converter
             fromSpinnerDeg.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinner_ItemSelected);
             toSpinnerDeg.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinner_ItemSelected);
 
-            var adapter = ArrayAdapter.CreateFromResource(
-                    view.Context, Resource.Array.from_arrayd, Android.Resource.Layout.SimpleSpinnerItem);
+            var degreesArrayPulled = Resources.GetStringArray(Resource.Array.degrees_array);
+
+            MySpinnerAdapter adapter = new MySpinnerAdapter(view.Context, Android.Resource.Layout.SimpleSpinnerItem, degreesArrayPulled);
 
             adapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
             fromSpinnerDeg.Adapter = adapter;
@@ -102,6 +111,13 @@ namespace Converter
                         resultDeg.Text = Convert.ToDouble(valueDeg.Text.ToString().Trim()).ToString("#.000");
                 }
             };
+
+            //
+            degreesFormulasButton.Click += delegate
+            {
+                ShowDialog();
+            };
+
             return view;
         }
 
@@ -110,6 +126,14 @@ namespace Converter
         {
             Spinner spinner = (Spinner)sender;
 
+        }
+
+        //Show dialog
+        public void ShowDialog()
+        {
+            var transaction = FragmentManager.BeginTransaction();
+            var dialogFragment = new DegreesFormulasFragment();
+            dialogFragment.Show(transaction, "degrees_formulas_fragment");
         }
 
         //Check if string is a number

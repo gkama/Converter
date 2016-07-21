@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#e6e6e6"
     android:fillViewport="true">
     <LinearLayout
         android:orientation="vertical"
@@ -21,7 +22,7 @@
             <TextView
                 android:text="Value: "
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:id="@+id/textViewLength1"
+                android:id="@+id/valueTextViewLength"
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:textColor="#000" />
@@ -43,7 +44,7 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/textViewLength2"
+                android:id="@+id/fromTextViewLength"
                 android:textColor="#000" />
             <Spinner
                 android:id="@+id/fromSpinnerLength"
@@ -59,7 +60,7 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/textViewLength3"
+                android:id="@+id/toTextViewLength"
                 android:textColor="#000" />
             <Spinner
                 android:id="@+id/toSpinnerLength"
@@ -86,7 +87,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/resultLength"
-                android:textColor="#00B200"
+                android:textColor="#000"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:paddingLeft="30dp"
@@ -104,6 +105,7 @@
             android:layout_marginTop="15dp">
             <Button
                 android:text="Conversion Info"
+                android:textColor="#000"
                 android:id="@+id/lengthFormulasButton"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"

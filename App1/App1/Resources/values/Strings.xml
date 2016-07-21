@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="Hello">Hello World, Click Me!</string>
   <string name="ApplicationName">Converter</string>
-  <string name="sample_show_log">Show Log</string>
-  <string name="sample_hide_log">Hide Log</string>
   <string name="fromto">
     <u>
       <b>
-        <i>From | To:</i>
+        <i>From - To:</i>
       </b>
     </u>
   </string>
@@ -18,15 +15,22 @@
       </b>
     </u>
   </string>
+  <string name="formula">
+    <u>
+      <b>
+        <i>Formula:</i>
+      </b>
+    </u>
+  </string>
 
   <string name="rdStr">Radians/Degrees</string>
-  <string-array name="from_array">
+  <string-array name="radiansDegrees_array">
     <item>Radians</item>
     <item>Degrees</item>
   </string-array>
 
   <string name="degreesStr">Degrees</string>
-  <string-array name="from_arrayd">
+  <string-array name="degrees_array">
     <item>Celcius</item>
     <item>Fahrenheit"</item>
     <item>Kelvin</item>
@@ -41,5 +45,14 @@
     <item>Kilometers</item>
     <item>Miles</item>
     <item>Inches</item>
+  </string-array>
+
+ <string name="weightStr">Weight</string>
+  <string-array name="weight_array">
+    <item>Pounds</item>
+    <item>Kilograms</item>
+    <item>Ounces</item>
+    <item>Grams</item>
+    <item>US Tons</item>
   </string-array>
 </resources>
