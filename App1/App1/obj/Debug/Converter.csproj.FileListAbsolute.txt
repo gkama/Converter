@@ -16,7 +16,6 @@ D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\layout\weightformulas.xml
 D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\layout\radiansdegrees.xml
 D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\values\strings.xml
 D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\drawable\btn_transparent.xml
-D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\drawable\btn_text_color.xml
 D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\drawable-hdpi\ic_transform_black_24dp.png
 D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\drawable-mdpi\ic_transform_black_24dp.png
 D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\drawable-xhdpi\ic_transform_black_24dp.png
@@ -57,5 +56,15 @@ D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\layout\main.xml
 D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\drawable\trending_arrow.png
 D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\anim\in_from_right.xml
 D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\anim\out_to_left.xml
+D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\drawable\right_black.png
+D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\drawable\right_white.png
+D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\anim\in_from_left.xml
+D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\anim\out_to_right.xml
+D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\drawable\arrow_left_black.png
+D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\drawable\ripple_effect_blue.xml
+D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\drawable\ripple_effect_greenish.xml
+D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\drawable\sort_white.png
+D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\layout\conversiondetails.xml
+D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\res\drawable\ripple_effect_blue_with_border.xml
 D:\Visual Studio 2015\Projects\App1\App1\obj\Debug\Converter.dll.mdb
 D:\Visual Studio 2015\Projects\App1\App1\bin\Debug\Converter.dll.mdb

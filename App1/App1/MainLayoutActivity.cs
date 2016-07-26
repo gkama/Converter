@@ -14,7 +14,7 @@ using Android.Graphics.Drawables;
 
 namespace Converter
 {
-    [Activity(Label = "Converter", Icon = "@drawable/icon", Theme = "@android:style/Theme.Holo.Light")]
+    [Activity(Icon = "@drawable/arrow_left_black", Theme = "@android:style/Theme.Holo.Light")]
     class MainLayoutActivity : Activity
     {
         private int LENGTHTAB_POS = 0;
@@ -27,6 +27,7 @@ namespace Converter
             base.OnCreate(bundle);
 
             this.ActionBar.NavigationMode = ActionBarNavigationMode.Tabs;
+            this.ActionBar.SetHomeButtonEnabled(true);
 
             SetContentView(Resource.Layout.MainLayout);
 
@@ -35,7 +36,7 @@ namespace Converter
             AddTab("degrees", new DegreesFrag());
             AddTab("radians & degrees", new RadiansDegreesFrag());
 
-            //Pass contsext
+            //Pass context
             RadiansDegreesFrag.currentRDFMainActivityContext = this.ApplicationContext;
             DegreesFrag.currentDFMainActivityContext = this.ApplicationContext;
             LengthFrag.currentLengthMainActivityContext = this.ApplicationContext;
@@ -52,6 +53,8 @@ namespace Converter
                 ActionBar.SetSelectedNavigationItem(DEGREESTAB_POS);
             else
                 ActionBar.SetSelectedNavigationItem(RADIANSDEGREESTAB_POS);
+
+            
         }
 
         protected override void OnSaveInstanceState(Bundle outState)
@@ -81,6 +84,15 @@ namespace Converter
             };
 
             this.ActionBar.AddTab(tab);
+        }
+
+        public override bool OnMenuItemSelected(int featureId, IMenuItem item)
+        {
+            Intent mainIntent = new Intent(this, typeof(Main));
+            StartActivity(mainIntent);
+            OverridePendingTransition(Resource.Animation.in_from_left, Resource.Animation.out_to_right);
+
+            return base.OnMenuItemSelected(featureId, item);
         }
     }
 }

@@ -28,7 +28,6 @@ namespace Converter
             Typeface centuryGothicFont = Typeface.CreateFromAsset(Application.Context.Assets, "fonts/century_gothic_font.TTF");
 
             Button button = view.FindViewById<Button>(Resource.Id.MyButton);
-            Button radiansDegreesFormulasButton = view.FindViewById<Button>(Resource.Id.radiansDegreesFormulasButton);
 
             EditText valueTxt = view.FindViewById<EditText>(Resource.Id.valueTxt);
             TextView resultTxt = view.FindViewById<TextView>(Resource.Id.resultTxt);
@@ -38,7 +37,6 @@ namespace Converter
 
             valueTxt.SetTypeface(centuryGothicFont, TypefaceStyle.Italic);
             resultTxt.SetTypeface(centuryGothicFont, TypefaceStyle.Italic);
-            radiansDegreesFormulasButton.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
             valueTextViewRadiansDegrees.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
             fromTextViewRadiansDegrees.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
             toTextViewRadiansDegrees.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
@@ -98,11 +96,6 @@ namespace Converter
                 }
             };
 
-            radiansDegreesFormulasButton.Click += delegate
-            {
-                ShowDialog();
-            };
-
             return view;
         }
 
@@ -110,14 +103,6 @@ namespace Converter
         private void spinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
         {
             Spinner spinner = (Spinner)sender;
-        }
-
-        //Show dialog
-        public void ShowDialog()
-        {
-            var transaction = FragmentManager.BeginTransaction();
-            var dialogFragment = new RadiansDegreesFormulasFragment();
-            dialogFragment.Show(transaction, "radiasns_degrees_formulas_fragment");
         }
 
         //Check if string is a number

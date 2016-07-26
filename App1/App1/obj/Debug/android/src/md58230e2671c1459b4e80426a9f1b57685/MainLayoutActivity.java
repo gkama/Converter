@@ -12,6 +12,7 @@ public class MainLayoutActivity
 		__md_methods = 
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
 			"n_onSaveInstanceState:(Landroid/os/Bundle;)V:GetOnSaveInstanceState_Landroid_os_Bundle_Handler\n" +
+			"n_onMenuItemSelected:(ILandroid/view/MenuItem;)Z:GetOnMenuItemSelected_ILandroid_view_MenuItem_Handler\n" +
 			"";
 		mono.android.Runtime.register ("Converter.MainLayoutActivity, Converter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", MainLayoutActivity.class, __md_methods);
 	}
@@ -39,6 +40,14 @@ public class MainLayoutActivity
 	}
 
 	private native void n_onSaveInstanceState (android.os.Bundle p0);
+
+
+	public boolean onMenuItemSelected (int p0, android.view.MenuItem p1)
+	{
+		return n_onMenuItemSelected (p0, p1);
+	}
+
+	private native boolean n_onMenuItemSelected (int p0, android.view.MenuItem p1);
 
 	private java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)

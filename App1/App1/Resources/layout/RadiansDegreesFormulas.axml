@@ -86,7 +86,7 @@
                     android:layout_span="3"
                     android:text="Dismiss"
                     android:id="@+id/dialogRadiansDegreesDismissBtn"
-                    android:background="@drawable/btn_transparent"
+                    android:background="@drawable/ripple_effect_blue"
                     android:padding="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp" />

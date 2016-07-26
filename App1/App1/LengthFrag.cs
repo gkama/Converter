@@ -85,7 +85,6 @@ namespace Converter
             Typeface centuryGothicFont = Typeface.CreateFromAsset(Application.Context.Assets, "fonts/century_gothic_font.TTF");
             
             Button buttonLength = view.FindViewById<Button>(Resource.Id.MyButtonLength);
-            Button lengthFormulasButton = view.FindViewById<Button>(Resource.Id.lengthFormulasButton);
 
             EditText valueLength = view.FindViewById<EditText>(Resource.Id.valueLength);
             TextView resultLength = view.FindViewById<TextView>(Resource.Id.resultLength);
@@ -95,7 +94,6 @@ namespace Converter
 
             valueLength.SetTypeface(centuryGothicFont, TypefaceStyle.Italic);
             resultLength.SetTypeface(centuryGothicFont, TypefaceStyle.Italic);
-            lengthFormulasButton.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
             valueTextViewLength.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
             fromTextViewLength.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
             toTextViewLength.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
@@ -145,12 +143,6 @@ namespace Converter
                 }
             };
 
-            //
-            lengthFormulasButton.Click += delegate
-            {
-                ShowDialog();
-            };
-
             return view;
         }
 
@@ -158,14 +150,6 @@ namespace Converter
         private void spinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
         {
             Spinner spinner = (Spinner)sender;
-        }
-
-        //Show dialog
-        public void ShowDialog()
-        {
-            var transaction = FragmentManager.BeginTransaction();
-            var dialogFragment = new LengthFormulasFragment();
-            dialogFragment.Show(transaction, "length_formulas_fragment");
         }
 
         //Check if string is a number

@@ -67,38 +67,41 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content" />
         </LinearLayout>
+      <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <Button
+                android:id="@+id/MyButtonDeg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_effect_blue"
+                android:text="Convert"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp" />
+      </LinearLayout>
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <Button
-                android:id="@+id/MyButtonDeg"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawableRight="@drawable/subdirectory"
-                android:background="@drawable/btn_transparent"
-                android:padding="10dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp" />
-            <TextView
-                android:text="..."
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/resultDeg"
-                android:textColor="#000"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:paddingLeft="30dp"
-                android:paddingRight="30dp"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:background="@drawable/back"
-                android:layout_marginLeft="30dp"
-                android:textIsSelectable="true" />
+          <TextView
+            android:text="..."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/resultDeg"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textIsSelectable="true" />
         </LinearLayout>
-        <LinearLayout
+        <!--<LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -112,6 +115,6 @@
                 android:background="@drawable/btn_transparent"
                 android:layout_gravity="center"
                 android:padding="5dp" />
-        </LinearLayout>
+        </LinearLayout>-->
     </LinearLayout>
 </ScrollView>

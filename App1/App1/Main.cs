@@ -7,7 +7,7 @@ using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Runtime;
-using Android.Views;
+using Android.Graphics;
 using Android.Widget;
 
 namespace Converter
@@ -22,15 +22,43 @@ namespace Converter
             // Create your application here
             SetContentView(Resource.Layout.Main);
 
+            //Custom font - Century Gothic
+            Typeface centuryGothicFont = Typeface.CreateFromAsset(Application.Context.Assets, "fonts/century_gothic_font.TTF");
+
+            //Set text view fonts
+            Button convertDetailsBtn = FindViewById<Button>(Resource.Id.convertDetailsBtn);
+
+            TextView txtMnuTextLength = FindViewById<TextView>(Resource.Id.txtMnuTextLength);
+            TextView txtMnuTextWeight = FindViewById<TextView>(Resource.Id.txtMnuTextWeight);
+            TextView txtMnuTextDegrees = FindViewById<TextView>(Resource.Id.txtMnuTextDegrees);
+            TextView txtMnuTextRadiansDegrees = FindViewById<TextView>(Resource.Id.txtMnuTextRadiansDegrees);
+
+            convertDetailsBtn.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
+
+            txtMnuTextLength.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
+            txtMnuTextWeight.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
+            txtMnuTextDegrees.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
+            txtMnuTextRadiansDegrees.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
+
             LinearLayout layoutLength = FindViewById<LinearLayout>(Resource.Id.layoutLength);
             LinearLayout layoutWeight = FindViewById<LinearLayout>(Resource.Id.layoutWeight);
             LinearLayout layoutDegrees= FindViewById<LinearLayout>(Resource.Id.layoutDegrees);
             LinearLayout layoutRadiansDegrees = FindViewById<LinearLayout>(Resource.Id.layoutRadiansDegrees);
 
+
             layoutLength.Click += LayoutLength_Click;
             layoutWeight.Click += LayoutWeight_Click;
             layoutDegrees.Click += LayoutDegrees_Click;
             layoutRadiansDegrees.Click += LayoutRadiansDegrees_Click;
+
+            convertDetailsBtn.Click += ConvertDetailsBtn_Click;
+        }
+
+        private void ConvertDetailsBtn_Click(object sender, EventArgs e)
+        {
+            Intent conversionActivityIntent = new Intent(this, typeof(ConversionDetailsActivity));
+            StartActivity(conversionActivityIntent);
+            OverridePendingTransition(Resource.Animation.in_from_right, Resource.Animation.out_to_left);
         }
 
         private void LayoutLength_Click(object sender, EventArgs e)

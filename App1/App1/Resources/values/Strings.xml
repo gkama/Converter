@@ -25,7 +25,7 @@
 
   <string name="rdStr">Radians/Degrees</string>
   <string-array name="radiansDegrees_array">
-    <item>Radians</item>
+    <item>Radians </item>
     <item>Degrees</item>
   </string-array>
 

@@ -59,7 +59,6 @@ namespace Converter
             Typeface centuryGothicFont = Typeface.CreateFromAsset(Application.Context.Assets, "fonts/century_gothic_font.TTF");
             
             Button buttonWeight = view.FindViewById<Button>(Resource.Id.MyButtonWeight);
-            Button weightFormulasButton = view.FindViewById<Button>(Resource.Id.weightFormulasButton);
             
             EditText valueWeight = view.FindViewById<EditText>(Resource.Id.valueWeight);
             TextView resultWeight = view.FindViewById<TextView>(Resource.Id.resultWeight);
@@ -69,7 +68,6 @@ namespace Converter
 
             valueWeight.SetTypeface(centuryGothicFont, TypefaceStyle.Italic);
             resultWeight.SetTypeface(centuryGothicFont, TypefaceStyle.Italic);
-            weightFormulasButton.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
             valueTextViewWeight.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
             fromTextViewWeight.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
             toTextViewWeight.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
@@ -120,12 +118,6 @@ namespace Converter
                 }
             };
 
-            //
-            weightFormulasButton.Click += delegate
-            {
-                ShowDialog();
-            };
-
             return view;
         }
 
@@ -133,14 +125,6 @@ namespace Converter
         private void spinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
         {
             Spinner spinner = (Spinner)sender;
-        }
-
-        //Show dialog
-        public void ShowDialog()
-        {
-            var transaction = FragmentManager.BeginTransaction();
-            var dialogFragment = new WeightFormulasFragment();
-            dialogFragment.Show(transaction, "weight_formulas_fragment");
         }
 
         //Check if string is a number

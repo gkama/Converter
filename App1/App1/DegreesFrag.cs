@@ -30,7 +30,6 @@ namespace Converter
             Typeface centuryGothicFont = Typeface.CreateFromAsset(Application.Context.Assets, "fonts/century_gothic_font.TTF");
             
             Button buttonDeg = view.FindViewById<Button>(Resource.Id.MyButtonDeg);
-            Button degreesFormulasButton = view.FindViewById<Button>(Resource.Id.degreesFormulasButton);
 
             EditText valueDeg = view.FindViewById<EditText>(Resource.Id.valueDeg);
             TextView resultDeg = view.FindViewById<TextView>(Resource.Id.resultDeg);
@@ -40,7 +39,6 @@ namespace Converter
 
             valueDeg.SetTypeface(centuryGothicFont, TypefaceStyle.Italic);
             resultDeg.SetTypeface(centuryGothicFont, TypefaceStyle.Italic);
-            degreesFormulasButton.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
             valueTextViewDegrees.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
             fromTextViewDegreest.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
             toTextViewDegrees.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
@@ -112,12 +110,6 @@ namespace Converter
                 }
             };
 
-            //
-            degreesFormulasButton.Click += delegate
-            {
-                ShowDialog();
-            };
-
             return view;
         }
 
@@ -126,14 +118,6 @@ namespace Converter
         {
             Spinner spinner = (Spinner)sender;
 
-        }
-
-        //Show dialog
-        public void ShowDialog()
-        {
-            var transaction = FragmentManager.BeginTransaction();
-            var dialogFragment = new DegreesFormulasFragment();
-            dialogFragment.Show(transaction, "degrees_formulas_fragment");
         }
 
         //Check if string is a number
