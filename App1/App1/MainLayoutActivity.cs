@@ -21,6 +21,8 @@ namespace Converter
         private int WEIGHTTAB_POS = 1;
         private int DEGREESTAB_POS = 2;
         private int RADIANSDEGREESTAB_POS = 3;
+        private int AREATAB_POS = 4;
+        private int LIQUIDTAB_POS = 5;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -34,13 +36,17 @@ namespace Converter
             AddTab("length", new LengthFrag());
             AddTab("weight", new WeightFrag());
             AddTab("degrees", new DegreesFrag());
-            AddTab("radians & degrees", new RadiansDegreesFrag());
+            AddTab("angle", new RadiansDegreesFrag());
+            AddTab("area", new AreaFrag());
+            AddTab("liquid", new LiquidFrag());
 
             //Pass context
             RadiansDegreesFrag.currentRDFMainActivityContext = this.ApplicationContext;
             DegreesFrag.currentDFMainActivityContext = this.ApplicationContext;
             LengthFrag.currentLengthMainActivityContext = this.ApplicationContext;
             WeightFrag.currentWeightMainActivityContext = this.ApplicationContext;
+            AreaFrag.currentAreaMainActivityContext = this.ApplicationContext;
+            LiquidFrag.currentLiquidMainActivityContext = this.ApplicationContext;
 
             //See where it came from and set the selected tab
             string cameFrom = Intent.GetStringExtra("CameFrom");
@@ -51,6 +57,10 @@ namespace Converter
                 ActionBar.SetSelectedNavigationItem(WEIGHTTAB_POS);
             else if (cameFrom == "Degrees")
                 ActionBar.SetSelectedNavigationItem(DEGREESTAB_POS);
+            else if (cameFrom == "Area")
+                ActionBar.SetSelectedNavigationItem(AREATAB_POS);
+            else if (cameFrom == "Liquid")
+                ActionBar.SetSelectedNavigationItem(LIQUIDTAB_POS);
             else
                 ActionBar.SetSelectedNavigationItem(RADIANSDEGREESTAB_POS);
 
@@ -69,7 +79,7 @@ namespace Converter
         {
             var tab = this.ActionBar.NewTab();
             tab.SetText(tabText);
-            //tab.SetIcon(icon);
+            //tab.SetIcon(Resource.Drawable.Area_50);
             
             // must set event handler before adding tab
             tab.TabSelected += delegate (object sender, ActionBar.TabEventArgs e)

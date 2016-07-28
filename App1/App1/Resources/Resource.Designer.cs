@@ -56,11 +56,17 @@ namespace Converter
 		public partial class Array
 		{
 			
+			// aapt resource value: 0x7f060004
+			public const int area_array = 2131099652;
+			
 			// aapt resource value: 0x7f060001
 			public const int degrees_array = 2131099649;
 			
 			// aapt resource value: 0x7f060002
 			public const int length_array = 2131099650;
+			
+			// aapt resource value: 0x7f060005
+			public const int liquid_array = 2131099653;
 			
 			// aapt resource value: 0x7f060000
 			public const int radiansDegrees_array = 2131099648;
@@ -95,7 +101,7 @@ namespace Converter
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int arrow_forward = 2130837504;
+			public const int Area_50 = 2130837504;
 			
 			// aapt resource value: 0x7f020001
 			public const int arrow_left_black = 2130837505;
@@ -107,34 +113,43 @@ namespace Converter
 			public const int btn_transparent = 2130837507;
 			
 			// aapt resource value: 0x7f020004
-			public const int ic_transform_black_24dp = 2130837508;
+			public const int Degrees_50 = 2130837508;
 			
 			// aapt resource value: 0x7f020005
-			public const int Icon = 2130837509;
+			public const int ic_transform_black_24dp = 2130837509;
 			
 			// aapt resource value: 0x7f020006
-			public const int right_black = 2130837510;
+			public const int Icon = 2130837510;
 			
 			// aapt resource value: 0x7f020007
-			public const int right_white = 2130837511;
+			public const int Length_50 = 2130837511;
 			
 			// aapt resource value: 0x7f020008
-			public const int ripple_effect_blue = 2130837512;
+			public const int Liquid_50 = 2130837512;
 			
 			// aapt resource value: 0x7f020009
-			public const int ripple_effect_blue_with_border = 2130837513;
+			public const int Math_50 = 2130837513;
 			
 			// aapt resource value: 0x7f02000a
-			public const int ripple_effect_greenish = 2130837514;
+			public const int right_black = 2130837514;
 			
 			// aapt resource value: 0x7f02000b
-			public const int sort_white = 2130837515;
+			public const int right_white = 2130837515;
 			
 			// aapt resource value: 0x7f02000c
-			public const int subdirectory = 2130837516;
+			public const int ripple_effect_blue = 2130837516;
 			
 			// aapt resource value: 0x7f02000d
-			public const int trending_arrow = 2130837517;
+			public const int ripple_effect_blue_with_border = 2130837517;
+			
+			// aapt resource value: 0x7f02000e
+			public const int ripple_effect_greenish = 2130837518;
+			
+			// aapt resource value: 0x7f02000f
+			public const int Temperature_50 = 2130837519;
+			
+			// aapt resource value: 0x7f020010
+			public const int Weight_50 = 2130837520;
 			
 			static Drawable()
 			{
@@ -149,185 +164,275 @@ namespace Converter
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f07002e
-			public const int MyButton = 2131165230;
-			
-			// aapt resource value: 0x7f07000e
-			public const int MyButtonDeg = 2131165198;
-			
-			// aapt resource value: 0x7f070018
-			public const int MyButtonLength = 2131165208;
-			
-			// aapt resource value: 0x7f070038
-			public const int MyButtonWeight = 2131165240;
-			
-			// aapt resource value: 0x7f070026
-			public const int convertDetailsBtn = 2131165222;
-			
-			// aapt resource value: 0x7f070011
-			public const int dialogDegreesDismissBtn = 2131165201;
-			
-			// aapt resource value: 0x7f07001b
-			public const int dialogDismissBtn = 2131165211;
-			
-			// aapt resource value: 0x7f070031
-			public const int dialogRadiansDegreesDismissBtn = 2131165233;
-			
-			// aapt resource value: 0x7f07003b
-			public const int dialogWeightDismissBtn = 2131165243;
-			
-			// aapt resource value: 0x7f070027
-			public const int fragmentContainer = 2131165223;
-			
-			// aapt resource value: 0x7f07002b
-			public const int fromSpinner = 2131165227;
-			
-			// aapt resource value: 0x7f07000b
-			public const int fromSpinnerDeg = 2131165195;
-			
-			// aapt resource value: 0x7f070015
-			public const int fromSpinnerLength = 2131165205;
-			
-			// aapt resource value: 0x7f070035
-			public const int fromSpinnerWeight = 2131165237;
-			
-			// aapt resource value: 0x7f07000a
-			public const int fromTextViewDegrees = 2131165194;
-			
-			// aapt resource value: 0x7f070014
-			public const int fromTextViewLength = 2131165204;
-			
-			// aapt resource value: 0x7f07002a
-			public const int fromTextViewRadiansDegrees = 2131165226;
-			
-			// aapt resource value: 0x7f070034
-			public const int fromTextViewWeight = 2131165236;
-			
-			// aapt resource value: 0x7f070022
-			public const int layoutDegrees = 2131165218;
-			
-			// aapt resource value: 0x7f070004
-			public const int layoutDegreesConversion = 2131165188;
-			
-			// aapt resource value: 0x7f07001d
-			public const int layoutLength = 2131165213;
-			
-			// aapt resource value: 0x7f070000
-			public const int layoutLengthConversion = 2131165184;
-			
-			// aapt resource value: 0x7f070024
-			public const int layoutRadiansDegrees = 2131165220;
+			// aapt resource value: 0x7f07004c
+			public const int MyButton = 2131165260;
 			
 			// aapt resource value: 0x7f070006
-			public const int layoutRadiansDegreesConversion = 2131165190;
+			public const int MyButtonArea = 2131165190;
 			
 			// aapt resource value: 0x7f07001f
-			public const int layoutWeight = 2131165215;
-			
-			// aapt resource value: 0x7f070002
-			public const int layoutWeightConversion = 2131165186;
-			
-			// aapt resource value: 0x7f07001c
-			public const int linearLayout1 = 2131165212;
-			
-			// aapt resource value: 0x7f070021
-			public const int linearLayout2 = 2131165217;
-			
-			// aapt resource value: 0x7f07000f
-			public const int resultDeg = 2131165199;
-			
-			// aapt resource value: 0x7f070019
-			public const int resultLength = 2131165209;
-			
-			// aapt resource value: 0x7f07002f
-			public const int resultTxt = 2131165231;
-			
-			// aapt resource value: 0x7f070039
-			public const int resultWeight = 2131165241;
-			
-			// aapt resource value: 0x7f070010
-			public const int tableDegreesFormulas = 2131165200;
-			
-			// aapt resource value: 0x7f07001a
-			public const int tableLengthFormulas = 2131165210;
-			
-			// aapt resource value: 0x7f070030
-			public const int tableRadiansDegreesFormulas = 2131165232;
-			
-			// aapt resource value: 0x7f07003a
-			public const int tableWeightFormulas = 2131165242;
-			
-			// aapt resource value: 0x7f07002d
-			public const int toSpinner = 2131165229;
-			
-			// aapt resource value: 0x7f07000d
-			public const int toSpinnerDeg = 2131165197;
-			
-			// aapt resource value: 0x7f070017
-			public const int toSpinnerLength = 2131165207;
-			
-			// aapt resource value: 0x7f070037
-			public const int toSpinnerWeight = 2131165239;
-			
-			// aapt resource value: 0x7f07000c
-			public const int toTextViewDegrees = 2131165196;
-			
-			// aapt resource value: 0x7f070016
-			public const int toTextViewLength = 2131165206;
-			
-			// aapt resource value: 0x7f07002c
-			public const int toTextViewRadiansDegrees = 2131165228;
-			
-			// aapt resource value: 0x7f070036
-			public const int toTextViewWeight = 2131165238;
-			
-			// aapt resource value: 0x7f070023
-			public const int txtMnuTextDegrees = 2131165219;
-			
-			// aapt resource value: 0x7f070005
-			public const int txtMnuTextDegreesConversion = 2131165189;
-			
-			// aapt resource value: 0x7f07001e
-			public const int txtMnuTextLength = 2131165214;
-			
-			// aapt resource value: 0x7f070001
-			public const int txtMnuTextLengthConversion = 2131165185;
-			
-			// aapt resource value: 0x7f070025
-			public const int txtMnuTextRadiansDegrees = 2131165221;
-			
-			// aapt resource value: 0x7f070007
-			public const int txtMnuTextRadiansDegreesConversion = 2131165191;
-			
-			// aapt resource value: 0x7f070020
-			public const int txtMnuTextWeight = 2131165216;
-			
-			// aapt resource value: 0x7f070003
-			public const int txtMnuTextWeightConversion = 2131165187;
-			
-			// aapt resource value: 0x7f070009
-			public const int valueDeg = 2131165193;
-			
-			// aapt resource value: 0x7f070013
-			public const int valueLength = 2131165203;
-			
-			// aapt resource value: 0x7f070008
-			public const int valueTextViewDegrees = 2131165192;
-			
-			// aapt resource value: 0x7f070012
-			public const int valueTextViewLength = 2131165202;
-			
-			// aapt resource value: 0x7f070028
-			public const int valueTextViewRadiansDegrees = 2131165224;
-			
-			// aapt resource value: 0x7f070032
-			public const int valueTextViewWeight = 2131165234;
+			public const int MyButtonDeg = 2131165215;
 			
 			// aapt resource value: 0x7f070029
-			public const int valueTxt = 2131165225;
+			public const int MyButtonLength = 2131165225;
 			
 			// aapt resource value: 0x7f070033
-			public const int valueWeight = 2131165235;
+			public const int MyButtonLiquid = 2131165235;
+			
+			// aapt resource value: 0x7f070056
+			public const int MyButtonWeight = 2131165270;
+			
+			// aapt resource value: 0x7f070009
+			public const int dialogAreaDismissBtn = 2131165193;
+			
+			// aapt resource value: 0x7f070022
+			public const int dialogDegreesDismissBtn = 2131165218;
+			
+			// aapt resource value: 0x7f07002c
+			public const int dialogDismissBtn = 2131165228;
+			
+			// aapt resource value: 0x7f070036
+			public const int dialogLiquidDismissBtn = 2131165238;
+			
+			// aapt resource value: 0x7f07004f
+			public const int dialogRadiansDegreesDismissBtn = 2131165263;
+			
+			// aapt resource value: 0x7f070059
+			public const int dialogWeightDismissBtn = 2131165273;
+			
+			// aapt resource value: 0x7f070045
+			public const int fragmentContainer = 2131165253;
+			
+			// aapt resource value: 0x7f070049
+			public const int fromSpinner = 2131165257;
+			
+			// aapt resource value: 0x7f070003
+			public const int fromSpinnerArea = 2131165187;
+			
+			// aapt resource value: 0x7f07001c
+			public const int fromSpinnerDeg = 2131165212;
+			
+			// aapt resource value: 0x7f070026
+			public const int fromSpinnerLength = 2131165222;
+			
+			// aapt resource value: 0x7f070030
+			public const int fromSpinnerLiquid = 2131165232;
+			
+			// aapt resource value: 0x7f070053
+			public const int fromSpinnerWeight = 2131165267;
+			
+			// aapt resource value: 0x7f070002
+			public const int fromTextViewArea = 2131165186;
+			
+			// aapt resource value: 0x7f07001b
+			public const int fromTextViewDegrees = 2131165211;
+			
+			// aapt resource value: 0x7f070025
+			public const int fromTextViewLength = 2131165221;
+			
+			// aapt resource value: 0x7f07002f
+			public const int fromTextViewLiquid = 2131165231;
+			
+			// aapt resource value: 0x7f070048
+			public const int fromTextViewRadiansDegrees = 2131165256;
+			
+			// aapt resource value: 0x7f070052
+			public const int fromTextViewWeight = 2131165266;
+			
+			// aapt resource value: 0x7f07003f
+			public const int layoutArea = 2131165247;
+			
+			// aapt resource value: 0x7f070015
+			public const int layoutAreaConversion = 2131165205;
+			
+			// aapt resource value: 0x7f070043
+			public const int layoutConversionDetails = 2131165251;
+			
+			// aapt resource value: 0x7f07003b
+			public const int layoutDegrees = 2131165243;
+			
+			// aapt resource value: 0x7f070010
+			public const int layoutDegreesConversion = 2131165200;
+			
+			// aapt resource value: 0x7f070037
+			public const int layoutLength = 2131165239;
+			
+			// aapt resource value: 0x7f07000b
+			public const int layoutLengthConversion = 2131165195;
+			
+			// aapt resource value: 0x7f070041
+			public const int layoutLiquid = 2131165249;
+			
+			// aapt resource value: 0x7f070017
+			public const int layoutLiquidConversion = 2131165207;
+			
+			// aapt resource value: 0x7f07003d
+			public const int layoutRadiansDegrees = 2131165245;
+			
+			// aapt resource value: 0x7f070012
+			public const int layoutRadiansDegreesConversion = 2131165202;
+			
+			// aapt resource value: 0x7f070039
+			public const int layoutWeight = 2131165241;
+			
+			// aapt resource value: 0x7f07000d
+			public const int layoutWeightConversion = 2131165197;
+			
+			// aapt resource value: 0x7f07000a
+			public const int linearLayout1 = 2131165194;
+			
+			// aapt resource value: 0x7f07000f
+			public const int linearLayout2 = 2131165199;
+			
+			// aapt resource value: 0x7f070014
+			public const int linearLayout3 = 2131165204;
+			
+			// aapt resource value: 0x7f070007
+			public const int resultArea = 2131165191;
+			
+			// aapt resource value: 0x7f070020
+			public const int resultDeg = 2131165216;
+			
+			// aapt resource value: 0x7f07002a
+			public const int resultLength = 2131165226;
+			
+			// aapt resource value: 0x7f070034
+			public const int resultLiquid = 2131165236;
+			
+			// aapt resource value: 0x7f07004d
+			public const int resultTxt = 2131165261;
+			
+			// aapt resource value: 0x7f070057
+			public const int resultWeight = 2131165271;
+			
+			// aapt resource value: 0x7f070008
+			public const int tableAreaFormulas = 2131165192;
+			
+			// aapt resource value: 0x7f070021
+			public const int tableDegreesFormulas = 2131165217;
+			
+			// aapt resource value: 0x7f07002b
+			public const int tableLengthFormulas = 2131165227;
+			
+			// aapt resource value: 0x7f070035
+			public const int tableLiquidFormulas = 2131165237;
+			
+			// aapt resource value: 0x7f07004e
+			public const int tableRadiansDegreesFormulas = 2131165262;
+			
+			// aapt resource value: 0x7f070058
+			public const int tableWeightFormulas = 2131165272;
+			
+			// aapt resource value: 0x7f07004b
+			public const int toSpinner = 2131165259;
+			
+			// aapt resource value: 0x7f070005
+			public const int toSpinnerArea = 2131165189;
+			
+			// aapt resource value: 0x7f07001e
+			public const int toSpinnerDeg = 2131165214;
+			
+			// aapt resource value: 0x7f070028
+			public const int toSpinnerLength = 2131165224;
+			
+			// aapt resource value: 0x7f070032
+			public const int toSpinnerLiquid = 2131165234;
+			
+			// aapt resource value: 0x7f070055
+			public const int toSpinnerWeight = 2131165269;
+			
+			// aapt resource value: 0x7f070004
+			public const int toTextViewArea = 2131165188;
+			
+			// aapt resource value: 0x7f07001d
+			public const int toTextViewDegrees = 2131165213;
+			
+			// aapt resource value: 0x7f070027
+			public const int toTextViewLength = 2131165223;
+			
+			// aapt resource value: 0x7f070031
+			public const int toTextViewLiquid = 2131165233;
+			
+			// aapt resource value: 0x7f07004a
+			public const int toTextViewRadiansDegrees = 2131165258;
+			
+			// aapt resource value: 0x7f070054
+			public const int toTextViewWeight = 2131165268;
+			
+			// aapt resource value: 0x7f070040
+			public const int txtMnuTextArea = 2131165248;
+			
+			// aapt resource value: 0x7f070016
+			public const int txtMnuTextAreaConversion = 2131165206;
+			
+			// aapt resource value: 0x7f070044
+			public const int txtMnuTextConversionDetails = 2131165252;
+			
+			// aapt resource value: 0x7f07003c
+			public const int txtMnuTextDegrees = 2131165244;
+			
+			// aapt resource value: 0x7f070011
+			public const int txtMnuTextDegreesConversion = 2131165201;
+			
+			// aapt resource value: 0x7f070038
+			public const int txtMnuTextLength = 2131165240;
+			
+			// aapt resource value: 0x7f07000c
+			public const int txtMnuTextLengthConversion = 2131165196;
+			
+			// aapt resource value: 0x7f070042
+			public const int txtMnuTextLiquid = 2131165250;
+			
+			// aapt resource value: 0x7f070018
+			public const int txtMnuTextLiquidConversion = 2131165208;
+			
+			// aapt resource value: 0x7f07003e
+			public const int txtMnuTextRadiansDegrees = 2131165246;
+			
+			// aapt resource value: 0x7f070013
+			public const int txtMnuTextRadiansDegreesConversion = 2131165203;
+			
+			// aapt resource value: 0x7f07003a
+			public const int txtMnuTextWeight = 2131165242;
+			
+			// aapt resource value: 0x7f07000e
+			public const int txtMnuTextWeightConversion = 2131165198;
+			
+			// aapt resource value: 0x7f070001
+			public const int valueArea = 2131165185;
+			
+			// aapt resource value: 0x7f07001a
+			public const int valueDeg = 2131165210;
+			
+			// aapt resource value: 0x7f070024
+			public const int valueLength = 2131165220;
+			
+			// aapt resource value: 0x7f07002e
+			public const int valueLiquid = 2131165230;
+			
+			// aapt resource value: 0x7f070000
+			public const int valueTextViewArea = 2131165184;
+			
+			// aapt resource value: 0x7f070019
+			public const int valueTextViewDegrees = 2131165209;
+			
+			// aapt resource value: 0x7f070023
+			public const int valueTextViewLength = 2131165219;
+			
+			// aapt resource value: 0x7f07002d
+			public const int valueTextViewLiquid = 2131165229;
+			
+			// aapt resource value: 0x7f070046
+			public const int valueTextViewRadiansDegrees = 2131165254;
+			
+			// aapt resource value: 0x7f070050
+			public const int valueTextViewWeight = 2131165264;
+			
+			// aapt resource value: 0x7f070047
+			public const int valueTxt = 2131165255;
+			
+			// aapt resource value: 0x7f070051
+			public const int valueWeight = 2131165265;
 			
 			static Id()
 			{
@@ -343,37 +448,49 @@ namespace Converter
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int ConversionDetails = 2130903040;
+			public const int Area = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int Degrees = 2130903041;
+			public const int AreaFormulas = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int DegreesFormulas = 2130903042;
+			public const int ConversionDetails = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int Length = 2130903043;
+			public const int Degrees = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int LengthFormulas = 2130903044;
+			public const int DegreesFormulas = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int Main = 2130903045;
+			public const int Length = 2130903045;
 			
 			// aapt resource value: 0x7f030006
-			public const int MainLayout = 2130903046;
+			public const int LengthFormulas = 2130903046;
 			
 			// aapt resource value: 0x7f030007
-			public const int RadiansDegrees = 2130903047;
+			public const int Liquid = 2130903047;
 			
 			// aapt resource value: 0x7f030008
-			public const int RadiansDegreesFormulas = 2130903048;
+			public const int LiquidFormulas = 2130903048;
 			
 			// aapt resource value: 0x7f030009
-			public const int Weight = 2130903049;
+			public const int Main = 2130903049;
 			
 			// aapt resource value: 0x7f03000a
-			public const int WeightFormulas = 2130903050;
+			public const int MainLayout = 2130903050;
+			
+			// aapt resource value: 0x7f03000b
+			public const int RadiansDegrees = 2130903051;
+			
+			// aapt resource value: 0x7f03000c
+			public const int RadiansDegreesFormulas = 2130903052;
+			
+			// aapt resource value: 0x7f03000d
+			public const int Weight = 2130903053;
+			
+			// aapt resource value: 0x7f03000e
+			public const int WeightFormulas = 2130903054;
 			
 			static Layout()
 			{
@@ -391,6 +508,9 @@ namespace Converter
 			// aapt resource value: 0x7f050000
 			public const int ApplicationName = 2131034112;
 			
+			// aapt resource value: 0x7f050008
+			public const int areaStr = 2131034120;
+			
 			// aapt resource value: 0x7f050005
 			public const int degreesStr = 2131034117;
 			
@@ -402,6 +522,9 @@ namespace Converter
 			
 			// aapt resource value: 0x7f050006
 			public const int lengthStr = 2131034118;
+			
+			// aapt resource value: 0x7f050009
+			public const int liquidStr = 2131034121;
 			
 			// aapt resource value: 0x7f050002
 			public const int multiplyby = 2131034114;

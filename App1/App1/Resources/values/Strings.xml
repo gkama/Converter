@@ -47,12 +47,33 @@
     <item>Inches</item>
   </string-array>
 
- <string name="weightStr">Weight</string>
+  <string name="weightStr">Weight</string>
   <string-array name="weight_array">
     <item>Pounds</item>
     <item>Kilograms</item>
     <item>Ounces</item>
     <item>Grams</item>
     <item>US Tons</item>
+  </string-array>
+
+  <string name="areaStr">Area</string>
+  <string-array name="area_array">
+    <item>Square Inches</item>
+    <item>Square Kilometers</item>
+    <item>Square Miles</item>
+    <item>Square Meters</item>
+    <item>Square Feet</item>
+    <item>Square Centimeters</item>
+    <item>Square Yards</item>
+  </string-array>
+
+  <string name="liquidStr">Liquid</string>
+  <string-array name="liquid_array">
+    <item>Pints</item>
+    <item>Cubic Meters</item>
+    <item>Quarts</item>
+    <item>Gallons</item>
+    <item>Ounces</item>
+    <item>Cups</item>
   </string-array>
 </resources>

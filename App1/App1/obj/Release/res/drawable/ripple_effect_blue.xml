@@ -1,0 +1,1 @@
+<ripple android:color="#ff64bbf8" tools:targetApi="lollipop" xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android"><item android:id="@android:id/mask"><shape android:shape="rectangle"><solid android:color="#ff64bbf8" /></shape></item></ripple>

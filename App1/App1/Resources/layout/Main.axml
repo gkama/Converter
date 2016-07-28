@@ -13,7 +13,7 @@
       android:layout_width="fill_parent"
       android:layout_height="wrap_content"
       android:orientation="horizontal"
-      android:layout_marginTop="10px"
+      android:layout_marginTop="30px"
       android:layout_marginBottom="10px">
       <LinearLayout
           android:id="@+id/layoutLength"
@@ -28,7 +28,7 @@
           android:layout_weight="1"
           android:layout_gravity="left">
         <ImageView
-            android:src="@drawable/right_black"
+            android:src="@drawable/Length_50"
             android:layout_width="33dp"
             android:layout_height="33dp"
             android:padding="1dp"
@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="Length"
-            android:textSize="16dp"
+            android:textSize="14dp"
             android:textColor="#000" />
       </LinearLayout>
       <LinearLayout
@@ -55,7 +55,7 @@
           android:layout_weight="1"
           android:layout_gravity="right">
         <ImageView
-            android:src="@drawable/right_black"
+            android:src="@drawable/Weight_50"
             android:layout_width="33dp"
             android:layout_height="33dp"
             android:padding="1dp"
@@ -66,11 +66,11 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="Weight"
-            android:textSize="16dp"
+            android:textSize="14dp"
             android:textColor="#000" />
       </LinearLayout>
     </LinearLayout>
-    
+
     <LinearLayout
       android:id="@+id/linearLayout2"
       android:layout_width="fill_parent"
@@ -91,7 +91,7 @@
           android:layout_weight="1"
           android:layout_gravity="left">
         <ImageView
-            android:src="@drawable/right_black"
+            android:src="@drawable/Temperature_50"
             android:layout_width="33dp"
             android:layout_height="33dp"
             android:padding="1dp"
@@ -102,7 +102,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="Degrees"
-            android:textSize="16dp"
+            android:textSize="14dp"
             android:textColor="#000" />
       </LinearLayout>
       <LinearLayout
@@ -118,7 +118,7 @@
           android:layout_weight="1"
           android:layout_gravity="right">
         <ImageView
-            android:src="@drawable/right_black"
+            android:src="@drawable/Degrees_50"
             android:layout_width="33dp"
             android:layout_height="33dp"
             android:padding="1dp"
@@ -128,32 +128,102 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Radians/Degrees"
-            android:textSize="16dp"
+            android:text="Angle"
+            android:textSize="14dp"
+            android:textColor="#000" />
+      </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+      android:id="@+id/linearLayout3"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginTop="10px"
+      android:layout_marginBottom="10px">
+      <LinearLayout
+          android:id="@+id/layoutArea"
+          android:background="@drawable/ripple_effect_blue_with_border"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingTop="10px"
+          android:paddingBottom="10px"
+          android:layout_marginLeft="30px"
+          android:layout_marginRight="15px"
+          android:orientation="vertical"
+          android:layout_weight="1"
+          android:layout_gravity="left">
+        <ImageView
+            android:src="@drawable/Area_50"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:padding="1dp"
+            android:layout_gravity="center" />
+        <TextView
+            android:id="@+id/txtMnuTextArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Area"
+            android:textSize="14dp"
+            android:textColor="#000" />
+      </LinearLayout>
+      <LinearLayout
+          android:id="@+id/layoutLiquid"
+          android:background="@drawable/ripple_effect_blue_with_border"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingTop="10px"
+          android:paddingBottom="10px"
+          android:layout_marginLeft="15px"
+          android:layout_marginRight="30px"
+          android:orientation="vertical"
+          android:layout_weight="1"
+          android:layout_gravity="right">
+        <ImageView
+            android:src="@drawable/Liquid_50"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:padding="1dp"
+            android:layout_gravity="center" />
+        <TextView
+            android:id="@+id/txtMnuTextLiquid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Liquid"
+            android:textSize="14dp"
             android:textColor="#000" />
       </LinearLayout>
     </LinearLayout>
 
-    <View
-        android:layout_height="1dip"
-        android:layout_width="match_parent"
-        android:background="#000"
-        android:layout_marginTop="30px"
-        android:layout_marginBottom="15px"
-        android:layout_marginLeft="35px"
-        android:layout_marginRight="35px"/>
     <LinearLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content">
-      <Button
-        android:text="Conversion Details"
-        android:textColor="#000"
-        android:id="@+id/convertDetailsBtn"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/ripple_effect_blue"
-        android:layout_gravity="left"
-        android:padding="5dp"/>
+          android:id="@+id/layoutConversionDetails"
+          android:background="@drawable/ripple_effect_blue_with_border"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingTop="10px"
+          android:paddingBottom="10px"
+          android:layout_marginTop="30px"
+          android:layout_marginLeft="30px"
+          android:layout_marginRight="30px"
+          android:orientation="vertical"
+          android:layout_weight="1"
+          android:layout_gravity="right">
+      <ImageView
+            android:src="@drawable/Math_50"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:padding="1dp"
+            android:layout_gravity="center" />
+      <TextView
+            android:id="@+id/txtMnuTextConversionDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Conversion Details"
+            android:textSize="14dp"
+            android:textColor="#000" />
     </LinearLayout>
   </LinearLayout>
 

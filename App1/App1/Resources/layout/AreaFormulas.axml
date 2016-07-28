@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView>
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#e6e6e6"
+      android:minWidth="25px"
+      android:minHeight="25px"
+      android:paddingLeft="20px"
+      android:paddingRight="20px"
+      android:paddingBottom="0px">
+    <TableLayout
+        android:id="@+id/tableAreaFormulas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20px"
+        android:stretchColumns="1">
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="@string/fromto"
+            android:padding="3dip" />
+        <TextView
+            android:text="@string/multiplyby"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+
+      <View
+          android:layout_height="2dip"
+          android:background="#FF909090"
+          android:layout_marginTop="10px"
+          android:layout_marginBottom="15px" />
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. Inches to Sq. Inches "
+            android:padding="3dip" />
+        <TextView
+            android:text="1.00000"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. Inches to Sq. KM"
+            android:padding="3dip" />
+        <TextView
+            android:text="0.00000"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. Inches to Sq. Miles"
+            android:padding="3dip" />
+        <TextView
+            android:text="0.00000"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. Inches to Sq. Meters"
+            android:padding="3dip" />
+        <TextView
+            android:text="0.00065"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. Inches to Sq. Feet"
+            android:padding="3dip" />
+        <TextView
+            android:text="0.00694"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. Inches to Sq. CM"
+            android:padding="3dip" />
+        <TextView
+            android:text="6.45160"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. Inches to Sq. Yards"
+            android:padding="3dip" />
+        <TextView
+            android:text="0.00077"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+
+      <View
+          android:layout_height="2dip"
+          android:background="#FF909090"
+          android:layout_marginTop="10px"
+          android:layout_marginBottom="15px" />
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. KM to Sq. Inches "
+            android:padding="3dip" />
+        <TextView
+            android:text="1550387596.89922"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. KM to Sq. KM"
+            android:padding="3dip" />
+        <TextView
+            android:text="1.00000"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. KM to Sq. Miles"
+            android:padding="3dip" />
+        <TextView
+            android:text="0.38605"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. KM to Sq. Meters"
+            android:padding="3dip" />
+        <TextView
+            android:text="1000248.06202"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. KM to Sq. Feet"
+            android:padding="3dip" />
+        <TextView
+            android:text="10766579.84496"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. KM to Sq. CM"
+            android:padding="3dip" />
+        <TextView
+            android:text="10002480620.15500"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. KM to Sq. Yards"
+            android:padding="3dip" />
+        <TextView
+            android:text="1196286.82171"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+
+      <View
+          android:layout_height="2dip"
+          android:background="#FF909090"
+          android:layout_marginTop="10px"
+          android:layout_marginBottom="15px" />
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. Miles to Sq. Inches "
+            android:padding="3dip" />
+        <TextView
+            android:text="4016064257.02811"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. Miles to Sq. KM"
+            android:padding="3dip" />
+        <TextView
+            android:text="2.59036"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. Miles to Sq. Miles"
+            android:padding="3dip" />
+        <TextView
+            android:text="1.00000"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. Miles to Sq. Meters"
+            android:padding="3dip" />
+        <TextView
+            android:text="2591004.01606"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. Miles to Sq. Feet"
+            android:padding="3dip" />
+        <TextView
+            android:text="27889333.33333"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. Miles to Sq. CM"
+            android:padding="3dip" />
+        <TextView
+            android:text="25910040160.64260"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. Miles to Sq. Yards"
+            android:padding="3dip" />
+        <TextView
+            android:text="3098815.26104"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+
+      <View
+          android:layout_height="2dip"
+          android:background="#FF909090"
+          android:layout_marginTop="10px"
+          android:layout_marginBottom="15px" />
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. Meters to Sq. Inches "
+            android:padding="3dip" />
+        <TextView
+            android:text="1550.00310"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. Meters to Sq. KM"
+            android:padding="3dip" />
+        <TextView
+            android:text="0.00000"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. Meters to Sq. Miles"
+            android:padding="3dip" />
+        <TextView
+            android:text="0.00000"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. Meters to Sq. Meters"
+            android:padding="3dip" />
+        <TextView
+            android:text="1.00000"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. Meters to Sq. Feet"
+            android:padding="3dip" />
+        <TextView
+            android:text="10.76391"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. Meters to Sq. CM"
+            android:padding="3dip" />
+        <TextView
+            android:text="10000.00000"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. Meters to Sq. Yards"
+            android:padding="3dip" />
+        <TextView
+            android:text="1.19599"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+
+      <View
+          android:layout_height="2dip"
+          android:background="#FF909090"
+          android:layout_marginTop="10px"
+          android:layout_marginBottom="15px" />
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. Feet to Sq. Inches "
+            android:padding="3dip" />
+        <TextView
+            android:text="144.00001"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. Feet to Sq. KM"
+            android:padding="3dip" />
+        <TextView
+            android:text="0.00000"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. Feet to Sq. Miles"
+            android:padding="3dip" />
+        <TextView
+            android:text="0.00000"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. Feet to Sq. Meters"
+            android:padding="3dip" />
+        <TextView
+            android:text="0.09290"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. Feet to Sq. Feet"
+            android:padding="3dip" />
+        <TextView
+            android:text="1.00000"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. Feet to Sq. CM"
+            android:padding="3dip" />
+        <TextView
+            android:text="929.03046"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. Feet to Sq. Yards"
+            android:padding="3dip" />
+        <TextView
+            android:text="0.11111"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+
+      <View
+            android:layout_height="2dip"
+            android:background="#FF909090"
+            android:layout_marginTop="10px"
+            android:layout_marginBottom="15px" />
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. CM to Sq. Inches "
+            android:padding="3dip" />
+        <TextView
+            android:text="0.15500"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. CM to Sq. KM"
+            android:padding="3dip" />
+        <TextView
+            android:text="0.00000"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. CM to Sq. Miles"
+            android:padding="3dip" />
+        <TextView
+            android:text="0.00000"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. CM to Sq. Meters"
+            android:padding="3dip" />
+        <TextView
+            android:text="0.00010"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. CM to Sq. Feet"
+            android:padding="3dip" />
+        <TextView
+            android:text="0.00108"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. CM to Sq. CM"
+            android:padding="3dip" />
+        <TextView
+            android:text="1.00000"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. CM to Sq. Yards"
+            android:padding="3dip" />
+        <TextView
+            android:text="0.00012"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+
+      <View
+            android:layout_height="2dip"
+            android:background="#FF909090"
+            android:layout_marginTop="10px"
+            android:layout_marginBottom="15px" />
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. Yards to Sq. Inches "
+            android:padding="3dip" />
+        <TextView
+            android:text="1295.99990"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. Yards to Sq. KM"
+            android:padding="3dip" />
+        <TextView
+            android:text="0.00000"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. Yards to Sq. Miles"
+            android:padding="3dip" />
+        <TextView
+            android:text="0.00000"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. Yards to Sq. Meters"
+            android:padding="3dip" />
+        <TextView
+            android:text="0.83613"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. Yards to Sq. Feet"
+            android:padding="3dip" />
+        <TextView
+            android:text="9.00000"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. Yards to Sq. CM"
+            android:padding="3dip" />
+        <TextView
+            android:text="8361.27293"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sq. Yards to Sq. Yards"
+            android:padding="3dip" />
+        <TextView
+            android:text="1.00000"
+            android:gravity="right"
+            android:padding="3dip" />
+      </TableRow>
+
+      <View
+          android:layout_height="2dip"
+          android:background="#FF909090"
+          android:layout_marginTop="10px"
+          android:layout_marginBottom="15px" />
+      <TableRow>
+        <Button
+            android:layout_span="3"
+            android:text="Dismiss"
+            android:id="@+id/dialogAreaDismissBtn"
+            android:background="@drawable/ripple_effect_blue"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+      </TableRow>
+    </TableLayout>
+  </LinearLayout>
+</ScrollView>

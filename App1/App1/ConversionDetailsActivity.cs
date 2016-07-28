@@ -33,22 +33,29 @@ namespace Converter
             TextView txtMnuTextWeightConversion = FindViewById<TextView>(Resource.Id.txtMnuTextWeightConversion);
             TextView txtMnuTextDegreesConversion = FindViewById<TextView>(Resource.Id.txtMnuTextDegreesConversion);
             TextView txtMnuTextRadiansDegreesConversion = FindViewById<TextView>(Resource.Id.txtMnuTextRadiansDegreesConversion);
+            TextView txtMnuTextAreaConversion = FindViewById<TextView>(Resource.Id.txtMnuTextAreaConversion);
+            TextView txtMnuTextLiquidConversion = FindViewById<TextView>(Resource.Id.txtMnuTextLiquidConversion);
 
             txtMnuTextLengthConversion.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
             txtMnuTextWeightConversion.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
             txtMnuTextDegreesConversion.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
             txtMnuTextRadiansDegreesConversion.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
+            txtMnuTextAreaConversion.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
+            txtMnuTextLiquidConversion.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
 
             LinearLayout layoutLengthConversion = FindViewById<LinearLayout>(Resource.Id.layoutLengthConversion);
             LinearLayout layoutWeightConversion = FindViewById<LinearLayout>(Resource.Id.layoutWeightConversion);
             LinearLayout layoutDegreesConversion = FindViewById<LinearLayout>(Resource.Id.layoutDegreesConversion);
             LinearLayout layoutRadiansDegreesConversion = FindViewById<LinearLayout>(Resource.Id.layoutRadiansDegreesConversion);
-
+            LinearLayout layoutAreaConversion = FindViewById<LinearLayout>(Resource.Id.layoutAreaConversion);
+            LinearLayout layoutLiquidConversion = FindViewById<LinearLayout>(Resource.Id.layoutLiquidConversion);
 
             layoutLengthConversion.Click += LayoutLengthConversion_Click;
             layoutWeightConversion.Click += LayoutWeightConversion_Click;
             layoutDegreesConversion.Click += LayoutDegreesConversion_Click;
             layoutRadiansDegreesConversion.Click += LayoutRadiansDegreesConversion_Click;
+            layoutAreaConversion.Click += layoutAreaConversion_Click;
+            layoutLiquidConversion.Click += layoutLiquidConversion_Click;
         }
 
         private void LayoutLengthConversion_Click(object sender, EventArgs e)
@@ -66,6 +73,14 @@ namespace Converter
         private void LayoutRadiansDegreesConversion_Click(object sender, EventArgs e)
         {
             ShowRadiansDegreesDialog();
+        }
+        private void layoutAreaConversion_Click(object sender, EventArgs e)
+        {
+            ShowAreaDialog();
+        }
+        private void layoutLiquidConversion_Click(object sender, EventArgs e)
+        {
+            ShowLiquidDialog();
         }
 
         //Dialog functions
@@ -93,6 +108,18 @@ namespace Converter
             var transaction = FragmentManager.BeginTransaction();
             var dialogFragment = new RadiansDegreesFormulasFragment();
             dialogFragment.Show(transaction, "radiasns_degrees_formulas_fragment");
+        }
+        public void ShowAreaDialog()
+        {
+            var transaction = FragmentManager.BeginTransaction();
+            var dialogFragment = new AreaFormulasFragment();
+            dialogFragment.Show(transaction, "area_formulas_fragment");
+        }
+        public void ShowLiquidDialog()
+        {
+            var transaction = FragmentManager.BeginTransaction();
+            var dialogFragment = new LiquidFormulasFragment();
+            dialogFragment.Show(transaction, "liquid_formulas_fragment");
         }
 
 

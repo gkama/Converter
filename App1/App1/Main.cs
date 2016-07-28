@@ -26,39 +26,39 @@ namespace Converter
             Typeface centuryGothicFont = Typeface.CreateFromAsset(Application.Context.Assets, "fonts/century_gothic_font.TTF");
 
             //Set text view fonts
-            Button convertDetailsBtn = FindViewById<Button>(Resource.Id.convertDetailsBtn);
-
             TextView txtMnuTextLength = FindViewById<TextView>(Resource.Id.txtMnuTextLength);
             TextView txtMnuTextWeight = FindViewById<TextView>(Resource.Id.txtMnuTextWeight);
             TextView txtMnuTextDegrees = FindViewById<TextView>(Resource.Id.txtMnuTextDegrees);
             TextView txtMnuTextRadiansDegrees = FindViewById<TextView>(Resource.Id.txtMnuTextRadiansDegrees);
-
-            convertDetailsBtn.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
+            TextView txtMnuTextArea = FindViewById<TextView>(Resource.Id.txtMnuTextArea);
+            TextView txtMnuTextLiquid = FindViewById<TextView>(Resource.Id.txtMnuTextLiquid);
+            TextView txtMnuTextConversionDetails = FindViewById<TextView>(Resource.Id.txtMnuTextConversionDetails);
+            
 
             txtMnuTextLength.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
             txtMnuTextWeight.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
             txtMnuTextDegrees.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
             txtMnuTextRadiansDegrees.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
+            txtMnuTextArea.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
+            txtMnuTextLiquid.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
+            txtMnuTextConversionDetails.SetTypeface(centuryGothicFont, TypefaceStyle.Normal);
+
 
             LinearLayout layoutLength = FindViewById<LinearLayout>(Resource.Id.layoutLength);
             LinearLayout layoutWeight = FindViewById<LinearLayout>(Resource.Id.layoutWeight);
             LinearLayout layoutDegrees= FindViewById<LinearLayout>(Resource.Id.layoutDegrees);
             LinearLayout layoutRadiansDegrees = FindViewById<LinearLayout>(Resource.Id.layoutRadiansDegrees);
-
+            LinearLayout layoutArea = FindViewById<LinearLayout>(Resource.Id.layoutArea);
+            LinearLayout layoutLiquid = FindViewById<LinearLayout>(Resource.Id.layoutLiquid);
+            LinearLayout layoutConversionDetails = FindViewById<LinearLayout>(Resource.Id.layoutConversionDetails);
 
             layoutLength.Click += LayoutLength_Click;
             layoutWeight.Click += LayoutWeight_Click;
             layoutDegrees.Click += LayoutDegrees_Click;
             layoutRadiansDegrees.Click += LayoutRadiansDegrees_Click;
-
-            convertDetailsBtn.Click += ConvertDetailsBtn_Click;
-        }
-
-        private void ConvertDetailsBtn_Click(object sender, EventArgs e)
-        {
-            Intent conversionActivityIntent = new Intent(this, typeof(ConversionDetailsActivity));
-            StartActivity(conversionActivityIntent);
-            OverridePendingTransition(Resource.Animation.in_from_right, Resource.Animation.out_to_left);
+            layoutArea.Click += LayoutArea_Click;
+            layoutLiquid.Click += LayoutLiquid_Click;
+            layoutConversionDetails.Click += LayoutConversionDetails_Click;
         }
 
         private void LayoutLength_Click(object sender, EventArgs e)
@@ -87,6 +87,26 @@ namespace Converter
             Intent mainActivityIntent = new Intent(this, typeof(MainLayoutActivity));
             mainActivityIntent.PutExtra("CameFrom", "RadiansDegrees");
             StartActivity(mainActivityIntent);
+            OverridePendingTransition(Resource.Animation.in_from_right, Resource.Animation.out_to_left);
+        }
+        private void LayoutArea_Click(object sender, EventArgs e)
+        {
+            Intent mainActivityIntent = new Intent(this, typeof(MainLayoutActivity));
+            mainActivityIntent.PutExtra("CameFrom", "Area");
+            StartActivity(mainActivityIntent);
+            OverridePendingTransition(Resource.Animation.in_from_right, Resource.Animation.out_to_left);
+        }
+        private void LayoutLiquid_Click(object sender, EventArgs e)
+        {
+            Intent mainActivityIntent = new Intent(this, typeof(MainLayoutActivity));
+            mainActivityIntent.PutExtra("CameFrom", "Liquid");
+            StartActivity(mainActivityIntent);
+            OverridePendingTransition(Resource.Animation.in_from_right, Resource.Animation.out_to_left);
+        }
+        private void LayoutConversionDetails_Click(object sender, EventArgs e)
+        {
+            Intent conversionActivityIntent = new Intent(this, typeof(ConversionDetailsActivity));
+            StartActivity(conversionActivityIntent);
             OverridePendingTransition(Resource.Animation.in_from_right, Resource.Animation.out_to_left);
         }
     }

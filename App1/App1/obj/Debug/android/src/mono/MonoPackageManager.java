@@ -100,16 +100,6 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "Converter.dll" comes first in this list. */
 		"Converter.dll",
 		"Java.Interop.dll",
-		"System.Threading.dll",
-		"System.Runtime.dll",
-		"System.Collections.dll",
-		"System.Collections.Concurrent.dll",
-		"System.Diagnostics.Debug.dll",
-		"System.Reflection.dll",
-		"System.Linq.dll",
-		"System.Runtime.InteropServices.dll",
-		"System.Runtime.Extensions.dll",
-		"System.Reflection.Extensions.dll",
 		"System.ServiceModel.Internals.dll",
 	};
 	public static final String[] Dependencies = new String[]{

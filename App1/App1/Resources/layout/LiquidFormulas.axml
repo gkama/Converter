@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e6e6e6"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:paddingBottom="0px">
+        <TableLayout
+            android:id="@+id/tableLiquidFormulas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px"
+            android:stretchColumns="1">
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="@string/fromto"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="@string/multiplyby"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="15px" />
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Pints to Pints "
+                    android:padding="3dip" />
+                <TextView
+                    android:text="1.00000"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Pints to Cubic Meters"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="0.00047"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Pints to Quarts"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="0.50000"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Pints to Gallons"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="0.12500"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Pints to Ounces"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="16.00000"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Pints to Cups"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="2.00000"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+            
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="15px" />
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Cubic Meters to Pints "
+                    android:padding="3dip" />
+                <TextView
+                    android:text="2113.37630"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Cubic Meters to Cubic Meters"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="1.00000"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Cubic Meters to Quarts"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="1056.68815"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Cubic Meters to Gallons"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="264.17204"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Cubic Meters to Ounces"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="33814.02077"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Cubic Meters to Cups"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="4226.75260"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+            
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="15px" />
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Quarts to Pints "
+                    android:padding="3dip" />
+                <TextView
+                    android:text="2.00000"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Quarts to Cubic Meters"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="0.00095"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Quarts to Quarts"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="1.00000"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Quarts to Gallons"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="0.25000"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Quarts to Ounces"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="32.00000"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Quarts to Cups"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="4.00000"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+            
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="15px" />
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Gallons to Pints "
+                    android:padding="3dip" />
+                <TextView
+                    android:text="8.00000"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Gallons to Cubic Meters"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="0.00379"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Gallons to Quarts"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="4.00000"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Gallons to Gallons"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="1.00000"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Gallons to Ounces"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="128.00000"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Gallons to Cups"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="16.00000"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+            
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="15px" />
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Ounces to Pints "
+                    android:padding="3dip" />
+                <TextView
+                    android:text="16.00000"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Ounces to Cubic Meters"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="0.00003"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Ounces to Quarts"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="0.03125"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Ounces to Gallons"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="0.00781"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Ounces to Ounces"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="1.00000"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Ounces to Cups"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="0.12500"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+            
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="15px" />
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Cups to Pints "
+                    android:padding="3dip" />
+                <TextView
+                    android:text="0.50000"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Cups to Cubic Meters"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="0.00024"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Cups to Quarts"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="0.25000"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Cups to Gallons"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="0.06250"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Cups to Ounces"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="8.00000"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Cups to Cups"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="1.00000"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+            
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="15px" />
+            <TableRow>
+                <Button
+                    android:layout_span="3"
+                    android:text="Dismiss"
+                    android:id="@+id/dialogLiquidDismissBtn"
+                    android:background="@drawable/ripple_effect_blue"
+                    android:padding="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

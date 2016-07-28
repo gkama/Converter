@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="converter.converter" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+  <!--suppress UsesMinSdkAttributes-->
+  <uses-sdk android:minSdkVersion="16" />
+  <application android:label="Converter" android:icon="@drawable/icon" android:debuggable="false" android:name="android.app.Application" android:allowBackup="true">
+    <activity android:icon="@drawable/arrow_left_black" android:theme="@android:style/Theme.Holo.Light" android:name="md58230e2671c1459b4e80426a9f1b57685.ConversionDetailsActivity" />
+    <activity android:icon="@drawable/icon" android:label="Converter" android:theme="@android:style/Theme.Holo.Light" android:name="md58230e2671c1459b4e80426a9f1b57685.Main">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:icon="@drawable/arrow_left_black" android:theme="@android:style/Theme.Holo.Light" android:name="md58230e2671c1459b4e80426a9f1b57685.MainLayoutActivity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="converter.converter.mono.MonoRuntimeProvider.__mono_init__" />
+  </application>
+</manifest>
